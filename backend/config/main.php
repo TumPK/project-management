@@ -45,6 +45,13 @@ return [
             ],
         ],
         */
+	    'view' => [
+	         'theme' => [
+	             'pathMap' => [
+	                 '@backend/views' => '@backend/themes/adminlte'
+	             ],
+	         ],
+	    ],
     ],
     'params' => $params,
 ];
