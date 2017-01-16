@@ -34,7 +34,7 @@ class User extends ActiveRecord implements IdentityInterface
      */
     public static function CollectionName()
     {
-        return ['db_pm','user'];
+        return ['project','user'];
     }
 
     /**
