@@ -28,13 +28,14 @@ class User extends ActiveRecord implements IdentityInterface
     
     const ROLE_USER = 'user';
     const ROLE_ADMIN = 'admin';
+    
 
     /**
      * @inheritdoc
      */
     public static function CollectionName()
     {
-        return ['project','user'];
+        return ['db_pm','user'];
     }
 
     /**
@@ -62,6 +63,8 @@ class User extends ActiveRecord implements IdentityInterface
                 'email',
                 'auth_key',
                 'role',
+        		'firstname',
+        		'lastname',
                 'status',
                 'created_at',
                 'updated_at',

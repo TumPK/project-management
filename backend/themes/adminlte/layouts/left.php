@@ -19,6 +19,7 @@
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
                     ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
+                	['label' => 'โครงการ', 'icon' => 'fa fa-file-code-o', 'url' => ['/project']],
                     ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],

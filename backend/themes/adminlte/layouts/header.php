@@ -1,5 +1,6 @@
 <?php
 use yii\helpers\Html;
+use yii\helpers\VarDumper;
 
 /* @var $this \yii\web\View */
 /* @var $content string */
@@ -24,7 +25,8 @@ use yii\helpers\Html;
                 <li class="dropdown user user-menu">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="user-image" alt="User Image"/>
-                        <span class="hidden-xs">Alexander Pierce</span>
+                   
+                        <span class="hidden-xs">&nbsp;<?php echo Yii::$app->user->identity->firstname." ".Yii::$app->user->identity->lastname; ?></span>
                     </a>
                     <ul class="dropdown-menu">
                         <!-- User image -->

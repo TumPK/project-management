@@ -3,6 +3,7 @@
 namespace backend\models;
 
 use Yii;
+use GuzzleHttp\Psr7\PumpStream;
 
 /**
  * This is the model class for collection "project".
@@ -74,5 +75,25 @@ class Project extends \yii\mongodb\ActiveRecord
             'create_by' => 'Create By',
             'member' => 'Member',
         ];
+    }
+    
+    public function findAllProject($name,$status,$sort){
+    	$conditions = [];
+    	$query = Project::find();
+    	if(!empty($status)){
+    		$conditions['status'] = $status;
+    	}
+    	if(!empty($sort)){
+    		$conditions['sort'] = $sort;
+    	}
+    	if(!empty($conditions)){
+    		$query->where($conditions);
+    	}
+    	if(!empty($name)){
+    		$query->andWhere(['like', "project_name", $name]);
+    	}
+    	
+    	$value = $query->all();
+    	return $value;
     }
 }
