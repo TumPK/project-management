@@ -18,8 +18,15 @@
             [
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
-                    ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                	['label' => 'โครงการ', 'icon' => 'fa fa-file-code-o', 'url' => ['/project']],
+                     ['label' => 'บุคลากร', 'icon' => 'fa fa-user', 'url' => ['/']],
+                	['label' => 'บทบาท', 'icon' => 'fa fa-user-secret', 'url' => ['/']],
+                	['label' => 'สิทธฺิ์', 'icon' => 'fa fa-lock', 'url' => ['/']],
+                	['label' => 'ตั้งค่า', 'icon' => 'fa fa-cog', 'url' => ['/']],
+                	['label' => 'ประเภทโครงการ', 'icon' => 'fa fa-bookmark', 'url' => ['/']],
+                	['label' => 'ปฏิทิน', 'icon' => 'fa fa-calendar', 'url' => ['/']],
+                	['label' => 'ทีม', 'icon' => 'fa fa-users', 'url' => ['/']],
+                	['label' => 'โครงการ', 'icon' => 'fa fa-file', 'url' => ['/project']],
+                	['label' => 'งาน', 'icon' => 'fa fa-tasks', 'url' => ['/task']],
                     ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
