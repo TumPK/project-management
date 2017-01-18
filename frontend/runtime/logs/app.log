@@ -199,3 +199,99 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484623756.572
     'REQUEST_TIME' => 1484623756
 ]
+2017-01-18 08:22:43 [::1][-][binrdt7of0td0068m598kff9q2][error][yii\base\InvalidConfigException] exception 'yii\base\InvalidConfigException' with message 'Unknown component ID: mongodb' in E:\project-management\vendor\yiisoft\yii2\di\ServiceLocator.php:136
+Stack trace:
+#0 E:\project-management\vendor\yiisoft\yii2-mongodb\ActiveRecord.php(36): yii\di\ServiceLocator->get('mongodb')
+#1 E:\project-management\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(198): yii\mongodb\ActiveRecord::getDb()
+#2 E:\project-management\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\ActiveQuery->getCollection(NULL)
+#3 E:\project-management\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor(NULL)
+#4 E:\project-management\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor(NULL)
+#5 E:\project-management\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one(NULL)
+#6 E:\project-management\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(163): yii\mongodb\ActiveQuery->one(NULL)
+#7 E:\project-management\vendor\yiisoft\yii2\validators\UniqueValidator.php(144): yii\mongodb\ActiveQuery->exists()
+#8 E:\project-management\vendor\yiisoft\yii2\validators\Validator.php(265): yii\validators\UniqueValidator->validateAttribute(Object(frontend\models\SignupForm), 'username')
+#9 E:\project-management\vendor\yiisoft\yii2\base\Model.php(356): yii\validators\Validator->validateAttributes(Object(frontend\models\SignupForm), Array)
+#10 E:\project-management\frontend\models\SignupForm.php(46): yii\base\Model->validate()
+#11 E:\project-management\frontend\controllers\SiteController.php(153): frontend\models\SignupForm->signup()
+#12 [internal function]: frontend\controllers\SiteController->actionSignup()
+#13 E:\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#14 E:\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 E:\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#16 E:\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#17 E:\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 E:\project-management\frontend\web\index.php(17): yii\base\Application->run()
+#19 {main}
+2017-01-18 08:22:43 [::1][-][binrdt7of0td0068m598kff9q2][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'X0ZyU1lacGdtdTMqGiACEBZ1RR0JDjEeEQ0GBRsxQlITNiY8IxEXKA=='
+    'SignupForm' => [
+        'username' => 'manchaisit'
+        'email' => 'manchaisit@gmail.com'
+        'password' => 'maneve89cv'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'bj6pcjfit3prgvvol9vmhj0dp7'
+    '_csrf-backend' => '9bda08826e96b3ab10f79d9e939fcb1437db865e842a9b2ae4f2d4d905012d89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"GQY4IUWM41KmTGmas1GxXoLAuGFdnm9h\";}'
+    'advanced-frontend' => 'binrdt7of0td0068m598kff9q2'
+    '_csrf-frontend' => '67927224edb4d078a377c1d1d9662bf123d7844fba13584c6f014ad5b6feec25a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"23AyCzrwI37NPTAyNKtVBk25LpTozKgO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '207'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=bj6pcjfit3prgvvol9vmhj0dp7; _csrf-backend=9bda08826e96b3ab10f79d9e939fcb1437db865e842a9b2ae4f2d4d905012d89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22GQY4IUWM41KmTGmas1GxXoLAuGFdnm9h%22%3B%7D; advanced-frontend=binrdt7of0td0068m598kff9q2; _csrf-frontend=67927224edb4d078a377c1d1d9662bf123d7844fba13584c6f014ad5b6feec25a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%2223AyCzrwI37NPTAyNKtVBk25LpTozKgO%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Windows Live\\Shared;C:\\Windows\\system32\\config\\systemprofile\\.dnx\\bin;C:\\Program Files\\Microsoft DNX\\Dnvm\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Users\\manlo\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'E:/'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'E:/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '4789'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484724163.521
+    'REQUEST_TIME' => 1484724163
+]
