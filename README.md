@@ -53,3 +53,9 @@ frontend
 vendor/                  contains dependent 3rd-party packages
 environments/            contains environment-based overrides
 ```
+
+add Config common/config/main-local.php
+'mongodb' => [
+    'class' => '\yii\mongodb\Connection',
+    'dsn' => 'mongodb://localhost:27017/project',
+],
