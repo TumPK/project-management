@@ -295,3 +295,397 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484724163.521
     'REQUEST_TIME' => 1484724163
 ]
+2017-01-18 09:23:17 [::1][-][b1josmr8reeg1l6ans8mko5rk5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoDB\Driver\Query' not found' in C:\www\project-management\vendor\yiisoft\yii2-mongodb\Command.php:286
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-18 09:23:17 [::1][-][b1josmr8reeg1l6ans8mko5rk5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'dEFJcmVMd3QcNitFDSIRPxwGLSY9ejIDJwo4Ai1.QBoRdQsTMgQeOw=='
+    'SignupForm' => [
+        'username' => 'swe56149'
+        'email' => 'asdad@g.com'
+        'password' => 'swe56149'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'c90rr0lemo4e0ddut7cgn5jei1'
+    'advanced-frontend' => 'b1josmr8reeg1l6ans8mko5rk5'
+    '_csrf-backend' => '10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9\";}'
+    '_csrf-frontend' => '274cf2f18c5a2d1087f5a267648bdfea4d675e9ee2ddabc5b6422d2820b487c8a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hwb7hnfKhGdTX6EwSKqpH27ne4BaWHiO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '209'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=c90rr0lemo4e0ddut7cgn5jei1; advanced-frontend=b1josmr8reeg1l6ans8mko5rk5; _csrf-backend=10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9%22%3B%7D; _csrf-frontend=274cf2f18c5a2d1087f5a267648bdfea4d675e9ee2ddabc5b6422d2820b487c8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hwb7hnfKhGdTX6EwSKqpH27ne4BaWHiO%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '49277'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484727797.135
+    'REQUEST_TIME' => 1484727797
+]
+2017-01-18 09:24:40 [::1][-][b1josmr8reeg1l6ans8mko5rk5][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message 'ไม่สามารถตรวจสอบการส่งข้อมูลของคุณ' in C:\www\project-management\vendor\yiisoft\yii2\web\Controller.php:110
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#1 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('signup', Array)
+#2 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('site/signup', Array)
+#3 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#4 C:\www\project-management\frontend\web\index.php(17): yii\base\Application->run()
+#5 {main}
+2017-01-18 09:24:40 [::1][-][b1josmr8reeg1l6ans8mko5rk5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'dEFJcmVMd3QcNitFDSIRPxwGLSY9ejIDJwo4Ai1.QBoRdQsTMgQeOw=='
+    'SignupForm' => [
+        'username' => 'swe56149'
+        'email' => 'asdad@g.com'
+        'password' => 'swe56149'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'c90rr0lemo4e0ddut7cgn5jei1'
+    'advanced-frontend' => 'b1josmr8reeg1l6ans8mko5rk5'
+    '_csrf-backend' => '10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9\";}'
+    '_csrf-frontend' => '274cf2f18c5a2d1087f5a267648bdfea4d675e9ee2ddabc5b6422d2820b487c8a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"hwb7hnfKhGdTX6EwSKqpH27ne4BaWHiO\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '209'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=c90rr0lemo4e0ddut7cgn5jei1; advanced-frontend=b1josmr8reeg1l6ans8mko5rk5; _csrf-backend=10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9%22%3B%7D; _csrf-frontend=274cf2f18c5a2d1087f5a267648bdfea4d675e9ee2ddabc5b6422d2820b487c8a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22hwb7hnfKhGdTX6EwSKqpH27ne4BaWHiO%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '49370'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484727880.548
+    'REQUEST_TIME' => 1484727880
+]
+2017-01-18 09:25:08 [::1][-][b1josmr8reeg1l6ans8mko5rk5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoDB\Driver\Query' not found' in C:\www\project-management\vendor\yiisoft\yii2-mongodb\Command.php:286
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-18 09:25:08 [::1][-][b1josmr8reeg1l6ans8mko5rk5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'dmgzVmZqVDhbAEQZADUNWR83B282D3lOBgpRYzwHbWEXB18uDythfg=='
+    'SignupForm' => [
+        'username' => 'kapok'
+        'email' => 'kapok@gmail.com'
+        'password' => 'kapok55'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'c90rr0lemo4e0ddut7cgn5jei1'
+    'advanced-frontend' => 'b1josmr8reeg1l6ans8mko5rk5'
+    '_csrf-backend' => '10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9\";}'
+    '_csrf-frontend' => '37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '209'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=c90rr0lemo4e0ddut7cgn5jei1; advanced-frontend=b1josmr8reeg1l6ans8mko5rk5; _csrf-backend=10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9%22%3B%7D; _csrf-frontend=37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '49393'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484727908.624
+    'REQUEST_TIME' => 1484727908
+]
+2017-01-18 09:28:52 [::1][-][b1josmr8reeg1l6ans8mko5rk5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoDB\Driver\Query' not found' in C:\www\project-management\vendor\yiisoft\yii2-mongodb\Command.php:286
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-18 09:28:52 [::1][-][b1josmr8reeg1l6ans8mko5rk5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'cm9IVTE3T2NfBz8aV2gWAhswfGxhUmIVAg0qYGtadjoTACQtWHZ6JQ=='
+    'SignupForm' => [
+        'username' => 'kapokpeaa'
+        'email' => 'ss@g.com'
+        'password' => 'kapokpeaa'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'c90rr0lemo4e0ddut7cgn5jei1'
+    'advanced-frontend' => 'b1josmr8reeg1l6ans8mko5rk5'
+    '_csrf-backend' => '10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9\";}'
+    '_csrf-frontend' => '37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '208'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=c90rr0lemo4e0ddut7cgn5jei1; advanced-frontend=b1josmr8reeg1l6ans8mko5rk5; _csrf-backend=10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9%22%3B%7D; _csrf-frontend=37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '49525'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484728132.71
+    'REQUEST_TIME' => 1484728132
+]
+2017-01-18 09:29:33 [::1][-][b1josmr8reeg1l6ans8mko5rk5][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'MongoDB\Driver\Query' not found' in C:\www\project-management\vendor\yiisoft\yii2-mongodb\Command.php:286
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-18 09:29:33 [::1][-][b1josmr8reeg1l6ans8mko5rk5][info][application] $_GET = [
+    'r' => 'site/signup'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'T21FWWQwdE5iBTIWAm8tLyYycWA0VVk4Pw8nbD5dTRcuAikhDXFBCA=='
+    'SignupForm' => [
+        'username' => 'swepea'
+        'email' => 'asdaasd@ffff.com'
+        'password' => 'swepea'
+    ]
+    'signup-button' => ''
+]
+
+$_COOKIE = [
+    'advanced-backend' => 'c90rr0lemo4e0ddut7cgn5jei1'
+    'advanced-frontend' => 'b1josmr8reeg1l6ans8mko5rk5'
+    '_csrf-backend' => '10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9\";}'
+    '_csrf-frontend' => '37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '210'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://localhost'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-backend=c90rr0lemo4e0ddut7cgn5jei1; advanced-frontend=b1josmr8reeg1l6ans8mko5rk5; _csrf-backend=10c412968a1d063229dcddabd33e44310e24daa3e9b122bfb53c0e67b67dc5a1a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22LUXwxw0mpTXtz1PZgUMPPEvBubw3P_q9%22%3B%7D; _csrf-frontend=37b995a3d2e0fe8ee9783e63c93ed5fa1df6f9dee116935ba51c12ef4e65d528a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-hwOf_Yai_49Pe-vpbb5Zm9YaolxiA5F%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/frontend/web/index.php'
+    'REMOTE_PORT' => '49557'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=site%2Fsignup'
+    'REQUEST_URI' => '/project-management/frontend/web/index.php?r=site%2Fsignup'
+    'SCRIPT_NAME' => '/project-management/frontend/web/index.php'
+    'PHP_SELF' => '/project-management/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484728173.101
+    'REQUEST_TIME' => 1484728173
+]

@@ -6290,3 +6290,635 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484724408.257
     'REQUEST_TIME' => 1484724408
 ]
+2017-01-18 10:26:44 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#8 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#18 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#21 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-01-18 10:26:42 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1hnpld6uctp4jdgim7sonucjh3'
+    '_csrf-frontend' => '3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF\";}'
+    '_csrf-backend' => '6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"62FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm\";}'
+    'advanced-backend' => 'vua5jrjo8t7vloalfm4turm0a3'
+    '_identity-backend' => '2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"587f28f0438919a09c005042\"},\"qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=mongoDbModel'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=1hnpld6uctp4jdgim7sonucjh3; _csrf-frontend=3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF%22%3B%7D; _csrf-backend=6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2262FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm%22%3B%7D; advanced-backend=vua5jrjo8t7vloalfm4turm0a3; _identity-backend=2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%22587f28f0438919a09c005042%22%7D%2C%22qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/backend/web/index.php'
+    'REMOTE_PORT' => '51762'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/project-management/backend/web/index.php'
+    'PHP_SELF' => '/project-management/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484731602.644
+    'REQUEST_TIME' => 1484731602
+]
+2017-01-18 10:26:45 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#8 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#18 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#21 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-01-18 10:26:43 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1hnpld6uctp4jdgim7sonucjh3'
+    '_csrf-frontend' => '3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF\";}'
+    '_csrf-backend' => '6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"62FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm\";}'
+    'advanced-backend' => 'vua5jrjo8t7vloalfm4turm0a3'
+    '_identity-backend' => '2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"587f28f0438919a09c005042\"},\"qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=mongoDbModel'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=1hnpld6uctp4jdgim7sonucjh3; _csrf-frontend=3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF%22%3B%7D; _csrf-backend=6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2262FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm%22%3B%7D; advanced-backend=vua5jrjo8t7vloalfm4turm0a3; _identity-backend=2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%22587f28f0438919a09c005042%22%7D%2C%22qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/backend/web/index.php'
+    'REMOTE_PORT' => '51768'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/project-management/backend/web/index.php'
+    'PHP_SELF' => '/project-management/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484731603.872
+    'REQUEST_TIME' => 1484731603
+]
+2017-01-18 10:26:47 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#8 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#18 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#21 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-01-18 10:26:44 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1hnpld6uctp4jdgim7sonucjh3'
+    '_csrf-frontend' => '3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF\";}'
+    '_csrf-backend' => '6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"62FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm\";}'
+    'advanced-backend' => 'vua5jrjo8t7vloalfm4turm0a3'
+    '_identity-backend' => '2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"587f28f0438919a09c005042\"},\"qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=mongoDbModel'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=1hnpld6uctp4jdgim7sonucjh3; _csrf-frontend=3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF%22%3B%7D; _csrf-backend=6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2262FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm%22%3B%7D; advanced-backend=vua5jrjo8t7vloalfm4turm0a3; _identity-backend=2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%22587f28f0438919a09c005042%22%7D%2C%22qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/backend/web/index.php'
+    'REMOTE_PORT' => '51772'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/project-management/backend/web/index.php'
+    'PHP_SELF' => '/project-management/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484731604.982
+    'REQUEST_TIME' => 1484731604
+]
+2017-01-18 10:26:53 [::1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:602
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(602): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(544): yii\db\Connection->createPdoInstance()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#8 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#18 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php:549
+Stack trace:
+#0 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(863): yii\db\Connection->open()
+#1 C:\www\project-management\vendor\yiisoft\yii2\db\Connection.php(850): yii\db\Connection->getMasterPdo()
+#2 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(219): yii\db\Connection->getSlavePdo()
+#3 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(894): yii\db\Command->prepare('<span class="ke...')
+#4 C:\www\project-management\vendor\yiisoft\yii2\db\Command.php(405): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 C:\www\project-management\vendor\yiisoft\yii2\db\mysql\Schema.php(349): yii\db\Command->queryColumn()
+#6 C:\www\project-management\vendor\yiisoft\yii2\db\Schema.php(229): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\Generator.php(158): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 C:\www\project-management\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 C:\www\project-management\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(379): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 C:\www\project-management\vendor\yiisoft\yii2\di\Container.php(154): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 C:\www\project-management\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 C:\www\project-management\vendor\yiisoft\yii2\widgets\ActiveForm.php(293): yii\BaseYii::createObject('[<span class="s...')
+#16 C:\www\project-management\vendor\yiisoft\yii2-gii\generators\model\form.php(9): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#18 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 C:\www\project-management\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#21 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 C:\www\project-management\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(61): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2017-01-18 10:26:51 [::1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1hnpld6uctp4jdgim7sonucjh3'
+    '_csrf-frontend' => '3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF\";}'
+    '_csrf-backend' => '6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"62FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm\";}'
+    'advanced-backend' => 'vua5jrjo8t7vloalfm4turm0a3'
+    '_identity-backend' => '2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"587f28f0438919a09c005042\"},\"qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=mongoDbModel'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=1hnpld6uctp4jdgim7sonucjh3; _csrf-frontend=3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF%22%3B%7D; _csrf-backend=6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2262FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm%22%3B%7D; advanced-backend=vua5jrjo8t7vloalfm4turm0a3; _identity-backend=2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%22587f28f0438919a09c005042%22%7D%2C%22qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/backend/web/index.php'
+    'REMOTE_PORT' => '51776'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_URI' => '/project-management/backend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'SCRIPT_NAME' => '/project-management/backend/web/index.php'
+    'PHP_SELF' => '/project-management/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484731611.673
+    'REQUEST_TIME' => 1484731611
+]
+2017-01-18 10:40:34 [::1][587f28f0438919a09c005042][vua5jrjo8t7vloalfm4turm0a3][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Uninitialized string offset: 0' in C:\www\project-management\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php:149
+Stack trace:
+#0 C:\www\project-management\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php(149): yii\base\ErrorHandler->handleError(8, 'Uninitialized s...', 'C:\\www\\project-...', 149, Array)
+#1 C:\www\project-management\vendor\dmstr\yii2-adminlte-asset\widgets\Menu.php(124): dmstr\widgets\Menu->isItemActive(Array)
+#2 C:\www\project-management\vendor\yiisoft\yii2\widgets\Menu.php(177): dmstr\widgets\Menu->normalizeItems(Array, NULL)
+#3 C:\www\project-management\vendor\yiisoft\yii2\base\Widget.php(102): yii\widgets\Menu->run()
+#4 C:\www\project-management\backend\themes\adminlte\layouts\left.php(61): yii\base\Widget::widget(Array)
+#5 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#6 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\www\\project-...', Array)
+#7 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('C:\\www\\project-...', Array, NULL)
+#8 C:\www\project-management\backend\themes\adminlte\layouts\main.php(51): yii\base\View->render('left.php', Array)
+#9 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(326): require('C:\\www\\project-...')
+#10 C:\www\project-management\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('C:\\www\\project-...', Array)
+#11 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\www\\project-...', Array, Object(backend\controllers\ProjectController))
+#12 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('<div class="pro...')
+#13 C:\www\project-management\backend\controllers\ProjectController.php(48): yii\base\Controller->render('index', Array)
+#14 [internal function]: backend\controllers\ProjectController->actionIndex()
+#15 C:\www\project-management\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#16 C:\www\project-management\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#17 C:\www\project-management\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#18 C:\www\project-management\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('project', Array)
+#19 C:\www\project-management\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#20 C:\www\project-management\backend\web\index.php(17): yii\base\Application->run()
+#21 {main}
+2017-01-18 10:40:34 [::1][587f28f0438919a09c005042][vua5jrjo8t7vloalfm4turm0a3][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_COOKIE = [
+    'advanced-frontend' => '1hnpld6uctp4jdgim7sonucjh3'
+    '_csrf-frontend' => '3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF\";}'
+    '_csrf-backend' => '6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"62FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm\";}'
+    'advanced-backend' => 'vua5jrjo8t7vloalfm4turm0a3'
+    '_identity-backend' => '2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"587f28f0438919a09c005042\"},\"qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/project-management/backend/web/'
+    '__id' => MongoDB\BSON\ObjectID#1
+    (
+        [oid] => '587f28f0438919a09c005042'
+    )
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/project-management/backend/web/index.php?r=project'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th-TH,th;q=0.8'
+    'HTTP_COOKIE' => 'advanced-frontend=1hnpld6uctp4jdgim7sonucjh3; _csrf-frontend=3f8ef04546c9c90844eff75e704f24b216d3ef40241b9971671c745b34fa369fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22jPz7p8olaWLqmf1ks2UDX6bq6RtzI9lF%22%3B%7D; _csrf-backend=6fee5b939acf046a256317f6aa54d10491313bc14b264199336bf1a72bd69e89a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%2262FbgBU1kfUYT0a5-0ZI1cvDK33SlzSm%22%3B%7D; advanced-backend=vua5jrjo8t7vloalfm4turm0a3; _identity-backend=2503c63039bfd5f3632f2fcde2851bbc372f84e841d6a4d6791ae8472668d6e6a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%22587f28f0438919a09c005042%22%7D%2C%22qU9yvruBRTi-WKbQMei6WAu00Qjx0cjQ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\Perl\\site\\bin;C:\\Perl\\bin;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;D:\\xampp\\php;D:\\te\\xampp\\php;D:\\com\\xampp\\php;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\nodejs\\;D:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\Users\\Msi\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Msi\\AppData\\Roaming\\npm'
+    'SystemRoot' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.16 (Win32) OpenSSL/1.0.1p PHP/5.6.11'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'C:/www'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/www'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/www/project-management/backend/web/index.php'
+    'REMOTE_PORT' => '52810'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/project-management/backend/web/index.php?r=project'
+    'SCRIPT_NAME' => '/project-management/backend/web/index.php'
+    'PHP_SELF' => '/project-management/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484732434.865
+    'REQUEST_TIME' => 1484732434
+]
