@@ -21,38 +21,151 @@ $this->title = 'กระดานข่าว';
 		</div>
 	</div>
 		
-<?php for($i=0;$i<7;$i++){?>
 	<div class="row">
+	
 		<div class="col-md-4">
 			<div class="box box-solid">
 				<div class="box-header with-border box-height">
-					<span>
+					<div class="text-right">
+						<span class="label label-warning" style="padding: 2px 10px 2px;">ยกเลิก</span>
+					</div>
+					<div>
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					</span>
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="box box-solid">
 				<div class="box-header with-border box-height">
-					<span>
+					<div class="text-right">
+						<span class="label label-danger" style="padding: 2px 10px 2px;">ปิด</span>
+					</div>
+					<div>
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					</span>
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-4">
 			<div class="box box-solid">
 				<div class="box-header with-border box-height">
-					<span>
+					<div class="text-right">
+						<span class="label label-success" style="padding: 2px 10px 2px;">เปิด</span>
+					</div>
+					<div>
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-					</span>
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 	</div>
-<?php } ?>
+	<div class="row">
+	
+		<div class="col-md-4">
+			<div class="box box-solid">
+				<div class="box-header with-border box-height">
+					<div class="text-right">
+						<span class="label label-info" style="padding: 2px 10px 2px;">ถูกลบ</span>
+					</div>
+					<div>
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box box-solid">
+				<div class="box-header with-border box-height">
+					<div class="text-right">
+						<span class="label label-danger" style="padding: 2px 10px 2px;">ปิด</span>
+					</div>
+					<div>
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="box box-solid">
+				<div class="box-header with-border box-height">
+					<div class="text-right">
+						<span class="label label-success" style="padding: 2px 10px 2px;">เปิด</span>
+					</div>
+					<div>
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+						aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+					</div>
+				</div>
+				<div class="box-body-height">
+					<div class="">
+						<div class="text-right">
+							
+							<a class="btn btn-circle btn-icon-only" href="#">
+								<i class="fa fa-folder-open-o"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
 </div>
