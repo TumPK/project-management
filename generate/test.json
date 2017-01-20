@@ -1,0 +1,29 @@
+{
+    "_id" : ObjectId("5881833f37d61b1ca0000485"),
+    "project_name" : "ระบบการจัดการโครงการ",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbfa6f57895703f01618"),
+    "status" : "1",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b3f937d61b1ca000048d"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b42337d61b1ca000048e"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b44337d61b1ca000048f"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b46337d61b1ca0000490"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }
+    ]
+}

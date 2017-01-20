@@ -1,0 +1,116 @@
+{
+    "_id" : ObjectId("5881833f37d61b1ca0000485"),
+    "project_name" : "ระบบการจัดการโครงการ",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbfa6f57895703f01618"),
+    "status" : "1",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b3f937d61b1ca000048d"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b42337d61b1ca000048e"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b44337d61b1ca000048f"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }, 
+        {
+            "id_user" : ObjectId("5881b46337d61b1ca0000490"),
+            "id_team" : ObjectId("5881bd1b6f57895703f01619")
+        }
+    ]
+}
+{
+    "_id" : ObjectId("5881835237d61b1ca0000486"),
+    "project_name" : "ระบบการจัดการบุคคล",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbfa6f57895703f01618"),
+    "status" : "2",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b42337d61b1ca000048e"),
+            "id_team" : ObjectId("5881bf376f57895703f0161a")
+        }, 
+        {
+            "id_user" : ObjectId("5881b44337d61b1ca000048f"),
+            "id_team" : ObjectId("5881bf376f57895703f0161a")
+        }, 
+        {
+            "id_user" : ObjectId("5881b55d37d61b1ca0000493"),
+            "id_team" : ObjectId("5881bf376f57895703f0161a")
+        }
+    ]
+}
+{
+    "_id" : ObjectId("5881838d37d61b1ca0000488"),
+    "project_name" : "ระบบการจัดการสมาชิก",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbfa6f57895703f01618"),
+    "status" : "3",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b3f937d61b1ca000048d")
+        }
+    ]
+}
+{
+    "_id" : ObjectId("588183a237d61b1ca0000489"),
+    "project_name" : "การจัดงานท่องเที่ยว 9 จังหวัด",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbc76f57895703f01617"),
+    "status" : "4",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b42337d61b1ca000048e"),
+            "id_team" : ObjectId("5881c0476f57895703f0161d")
+        }, 
+        {
+            "id_user" : ObjectId("5881b58637d61b1ca0000494"),
+            "id_team" : ObjectId("5881c0476f57895703f0161d")
+        }
+    ]
+}
+{
+    "_id" : ObjectId("58818bb637d61b1ca000048b"),
+    "project_name" : "ระบบการจัดการทีม",
+    "start_date" : "2017-01-20 16:27:00",
+    "end_date" : "2017-04-20 16:27:47",
+    "description" : "",
+    "project_type" : ObjectId("5881bbfa6f57895703f01618"),
+    "status" : "1",
+    "create_date" : "2017-01-20 16:27:47",
+    "create_by" : ObjectId("5881b3f937d61b1ca000048d"),
+    "member" : [ 
+        {
+            "id_user" : ObjectId("5881b5c637d61b1ca0000496"),
+            "id_team" : ObjectId("5881bfc76f57895703f0161b")
+        }, 
+        {
+            "id_user" : ObjectId("5881b44337d61b1ca000048f"),
+            "id_team" : ObjectId("5881bfc76f57895703f0161b")
+        }, 
+        {
+            "id_user" : ObjectId("5881b42337d61b1ca000048e"),
+            "id_team" : ObjectId("5881bfc76f57895703f0161b")
+        }
+    ]
+}
