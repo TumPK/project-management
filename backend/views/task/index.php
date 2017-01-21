@@ -2,16 +2,18 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use backend\assets\indextadk;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Tasks';
 $this->params['breadcrumbs'][] = $this->title;
+indextadk::register ( $this );
 ?>
 <div class="task-index">
 
-    
+     
 
     <p>
         <?= Html::a('Create Task', ['create'], ['class' => 'btn btn-success']) ?>
@@ -20,90 +22,229 @@ $this->params['breadcrumbs'][] = $this->title;
     
   	 <div class="col-md-4">
   	
-    <div class="box-footer text-black">
-               TO DO
+    <div class="portlet light bordered">
+           <p align="center">    TO DO</p>
                 
-                  <!-- Progress bars -->
-                  <div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #1</span>
-                    <small class="pull-right">90%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                  </div>
-			</div>
-			<div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #2</span>
-                    <small class="pull-right">70%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                  </div>
-               </div>
-               
-             
-              <!-- /.row -->
-            </div>
-            </div>
-             <div class="col-md-4">
+                  <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task1</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task2</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task3</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div></div>
+       <div class="col-md-4">
   	
-    <div class="box-footer">
-    			DOING
-                  <!-- Progress bars -->
-                  <div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #1</span>
-                    <small class="pull-right">90%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                  </div>
-			</div>
-			<div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #2</span>
-                    <small class="pull-right">70%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                  </div>
-               </div>
-               
-             
-              <!-- /.row -->
-            </div>
-            </div>
+    <div class="portlet light bordered">
+    			<p align="center">  DOING</p>
+                    <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task1</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task2</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task3</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+           				 </div>
+          			  </div>
              <div class="col-md-4">
-  	
-    <div class="box-footer text-black">
-               DONE
+   			 <div class="portlet light bordered">
+              <p align="center">   DONE</p>
                 
-                  <!-- Progress bars -->
-                  <div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #1</span>
-                    <small class="pull-right">90%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
-                  </div>
-			</div>
-			<div>
-                  <div class="clearfix">
-                    <span class="pull-left">Task #2</span>
-                    <small class="pull-right">70%</small>
-                  </div>
-                  <div class="progress xs">
-                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
-                  </div>
-               </div>
-               
-             
-              <!-- /.row -->
+                   <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task1</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task2</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="dashboard-stat2 bordered blue">
+                                <div class="display">
+                                    <div class="number">
+                                        <h3 class="font-green-sharp">
+                                            <span>task3</span>
+                                            
+                                        </h3>
+                                        
+                                    </div>
+                                    
+                                </div>
+                                <div class="progress-info">
+                                    <div class="progress">
+                                        <span style="width: 76%;" class="progress-bar progress-bar-success green-sharp">
+                                            <span class="sr-only">76% progress</span>
+                                        </span>
+                                    </div>
+                                    <div class="status">
+                                        <div class="status-title"> progress </div>
+                                        <div class="status-number"> 76% </div>
+                                    </div>
+                                </div>
             </div>
             </div>
             </div>
+    </div>
     
 </div>

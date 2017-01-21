@@ -22,7 +22,7 @@ $this->title = '';
                                     <div class="caption">
                                         <i class=" icon-layers font-red"></i>
                                         <span class="caption-subject font-red bold uppercase"> สร้างงาน -
-                                            <span class="step-title"> Step 1 of 3 </span>
+                                            <span class="step-title"> Step 1 of 2 </span>
                                         </span>
                                     </div>
                                     
@@ -36,23 +36,17 @@ $this->title = '';
                                                         <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
                                                             <span class="number"> 1 </span>
                                                             <span class="desc">
-                                                                <i class="fa fa-check"></i> ข้อมูลพื้นฐานโครงการ </span>
+                                                                <i class="fa fa-check"></i> ข้อมูลพื้นฐานงาน </span>
                                                         </a>
                                                     </li>
                                                     <li>
                                                         <a href="#tab2" data-toggle="tab" class="step">
                                                             <span class="number"> 2 </span>
                                                             <span class="desc">
-                                                                <i class="fa fa-check"></i> สมาชิกในโครงการ </span>
+                                                                <i class="fa fa-check"></i> สมาชิกในงาน </span>
                                                         </a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#tab3" data-toggle="tab" class="step active">
-                                                            <span class="number"> 3 </span>
-                                                            <span class="desc">
-                                                                <i class="fa fa-check"></i> สร้างทีมในโครงการ </span>
-                                                        </a>
-                                                    </li>
+                                                    
                                                     
                                                 </ul>
                                                 <div id="bar" class="progress progress-striped" role="progressbar">
@@ -67,7 +61,7 @@ $this->title = '';
                                                         
                                                         <div class="portlet-body">
                                     <div class="row">
-                                        <label class="col-md-3 control-label" style="align:right;">ชื่อโครงการ<span style="color:red;"> * </span></label>
+                                        <label class="col-md-3 control-label" style="align:right;">ชื่องาน<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input type="text" class="form-control" placeholder="ชื่อโครงการ"></div>
                                     </div>
                                     <p></p>
@@ -80,37 +74,9 @@ $this->title = '';
                                         <label class="col-md-3 control-label" style="align:right;">วันที่สิ้นสุด<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input class="form-control form-control-inline date-picker" size="16" type="text" value="" placeholder="วันที่สิ้นสุด"/></div>
                                     </div>
-                                    <p></p>
-                                    <div class="row">
-                                        <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
-                                        <div class="col-md-6">
-                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea><br>
-                                        </div>
+                                   
                                     </div>
-                                    <p></p>
-                                    <div class="row">
-                                       <label class="col-md-3 control-label" style="align:right;">ประเภทโครงการ<span style="color:red;"> * </span></label>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                            <option class="form-control"></option>
-                                                <option class="form-control">โครงการ</option>
-                                                <option class="form-control">อีเว้นท์</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <p></p>
-                                    <div class="row">
-                                       <label class="col-md-3 control-label" style="align:right;">แผนก</label>
-                                        <div class="col-md-6">
-                                            <select class="form-control">
-                                            <option class="form-control"></option>
-                                                <option class="form-control">วิจัยและพัฒนาเทคโนโลยี</option>
-                                                <option class="form-control">บุคคล</option>
-                                                <option class="form-control">บัญชี</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
+                                    
                                                     </div>
                                                     
                                                        
@@ -271,7 +237,7 @@ $this->title = '';
                         <div class="col-md-4">
                         <div class="portlet light portlet-fit portlet-form bordered">
                         
-                        <center><h5>พนักงานภายในโครงการ</h5></center>
+                        <center><h5>พนักงานภายในงาน</h5></center>
                			<table  width="100%">
                                         <thead>
                                             <tr>
@@ -324,24 +290,7 @@ $this->title = '';
         
     
                                                     </div>
-                                                    <div class="tab-pane" id="tab3">
-                                                        <div class="col-md-12" >
-                                                        
-                                                        <div class="row">
-                                                    <div class="col-md-2" >ต้องการสร้างทีมใหม่หรือไม่ </div><div class="col-md-3" >    ต้องการ<input type="radio" name="checkbox-1" id="checkbox-1" checked/>
-                                                    ไม่ต้องการ<input type="radio" name="checkbox-1" id="checkbox-1" />
-                                                        </div></div>
-                                                        <br>
-                                                       
-                                                    </div>
-                                                    <div class="col-md-12" >
-                                                    <div class="row">
-                                                <label class="col-md-2 control-label" style="align:right;">ชื่อทีม<span style="color:red;"> * </span></label>
-                                                <div class="col-md-3" >
-                                                <input class="form-control form-control-inline " size="16" type="text" value="" placeholder="ชื่อทีม"/>
-                                                    </div></div>
-                                                     <br> <br> <br>
-                                                    </div></div>
+                                                   
                                                    
                                             
                                             <div class="form-actions">
