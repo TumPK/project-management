@@ -8,7 +8,7 @@ $baseUrl = \Yii::getAlias('@web');
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Tasks';
+$this->title = 'MyTasks';
 $this->params['breadcrumbs'][] = $this->title;
 indextadk::register ( $this );
 ?>
@@ -42,26 +42,16 @@ indextadk::register ( $this );
                             <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 328px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="328" data-initialized="1" style="overflow: hidden; width: auto; height: 328px;">
                                 <h1 class="list-heading" style="text-align:center">Task1</h1>
                                 <center><div>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </a>
+                                 
                                     <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=task/update";?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-archive"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-ban"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
+                                  
                                 </div></center>
                                 <ul >
                                     <li >
                                         <div>
-                                            <h5>คำอธิบายโปรเจค      สุดยอด</h4>
+                                            <h5>คำอธิบายงาน      สุดยอด</h4>
                                         </div>
                                     </li>
                                     <li >
@@ -76,7 +66,7 @@ indextadk::register ( $this );
                                     </li>
                                     <li >
                                        <div>
-                                            <h5>ผู้จัดการโครงการ     เป้ลี่ อยากมียูเอฟโอ</h4>
+                                            <h5>ผู้รับผิดชอบ     เป้ลี่ อยากมียูเอฟโอ</h4>
                                         </div>
                                     </li>
                                 </ul>

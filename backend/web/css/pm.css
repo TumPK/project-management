@@ -3,10 +3,13 @@
 	height: 70px;
 }
 .skin-green-light .main-header .navbar {
-    background-color: rgba(89, 166, 0, 0.83) !important;
+    background-color: #690 !important;
 }
 .skin-green-light .main-header .logo {
-    background-color: rgba(89, 166, 0, 0.83) !important;
+    background-color: #690 !important;
+}
+.skin-green-light .main-header .navbar .sidebar-toggle:hover {
+    background-color: #507701 !important;
 }
 .box-body-height {
 	border-top-left-radius: 0;

@@ -6290,3 +6290,598 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1484724408.257
     'REQUEST_TIME' => 1484724408
 ]
+2017-01-20 04:24:33 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\pm\backend\views\project\index.php:51
+Stack trace:
+#0 D:\project\pm\backend\views\project\index.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\project\\pm\\b...', 51, Array)
+#1 D:\project\pm\vendor\yiisoft\yii2\base\View.php(326): require('D:\\project\\pm\\b...')
+#2 D:\project\pm\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\project\\pm\\b...', Array)
+#3 D:\project\pm\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\project\\pm\\b...', Array, Object(backend\controllers\ProjectController))
+#4 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\ProjectController))
+#5 D:\project\pm\backend\controllers\ProjectController.php(48): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\ProjectController->actionIndex()
+#7 D:\project\pm\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('project', Array)
+#11 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-20 04:24:33 [::1][-][-][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '573396a55bc16d1977ea534e49615b5eb5a0206ed189a481adf5ba6546cc84fca:2:{i:0;s:18:\"_identity-frontend\";i:1;s:80:\"[{\"$oid\":\"58787f3b37d61b271c005b46\"},\"xLcSxTnAsel2M_JJVNELJpfhzFHglj0d\",2592000]\";}'
+    '_csrf-backend' => '305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT\";}'
+    'advanced-backend' => 's2h3ng7jp7kql7378hg9inrqc5'
+    '_identity-backend' => '301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"58787f3b37d61b271c005b46\"},\"xLcSxTnAsel2M_JJVNELJpfhzFHglj0d\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/pm/backend/web/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-frontend=573396a55bc16d1977ea534e49615b5eb5a0206ed189a481adf5ba6546cc84fca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%2258787f3b37d61b271c005b46%22%7D%2C%22xLcSxTnAsel2M_JJVNELJpfhzFHglj0d%22%2C2592000%5D%22%3B%7D; _csrf-backend=305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT%22%3B%7D; advanced-backend=s2h3ng7jp7kql7378hg9inrqc5; _identity-backend=301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%2258787f3b37d61b271c005b46%22%7D%2C%22xLcSxTnAsel2M_JJVNELJpfhzFHglj0d%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '50181'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/pm/backend/web/index.php?r=project'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484882673.201
+    'REQUEST_TIME' => 1484882673
+]
+2017-01-20 04:26:30 [::1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Undefined index: ' in D:\project\pm\backend\views\project\index.php:51
+Stack trace:
+#0 D:\project\pm\backend\views\project\index.php(51): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'D:\\project\\pm\\b...', 51, Array)
+#1 D:\project\pm\vendor\yiisoft\yii2\base\View.php(326): require('D:\\project\\pm\\b...')
+#2 D:\project\pm\vendor\yiisoft\yii2\base\View.php(248): yii\base\View->renderPhpFile('D:\\project\\pm\\b...', Array)
+#3 D:\project\pm\vendor\yiisoft\yii2\base\View.php(150): yii\base\View->renderFile('D:\\project\\pm\\b...', Array, Object(backend\controllers\ProjectController))
+#4 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(378): yii\base\View->render('index', Array, Object(backend\controllers\ProjectController))
+#5 D:\project\pm\backend\controllers\ProjectController.php(48): yii\base\Controller->render('index', Array)
+#6 [internal function]: backend\controllers\ProjectController->actionIndex()
+#7 D:\project\pm\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#8 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('', Array)
+#10 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('project', Array)
+#11 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#13 {main}
+2017-01-20 04:26:30 [::1][-][-][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_COOKIE = [
+    '_identity-frontend' => '573396a55bc16d1977ea534e49615b5eb5a0206ed189a481adf5ba6546cc84fca:2:{i:0;s:18:\"_identity-frontend\";i:1;s:80:\"[{\"$oid\":\"58787f3b37d61b271c005b46\"},\"xLcSxTnAsel2M_JJVNELJpfhzFHglj0d\",2592000]\";}'
+    '_csrf-backend' => '305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT\";}'
+    'advanced-backend' => 's2h3ng7jp7kql7378hg9inrqc5'
+    '_identity-backend' => '301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"58787f3b37d61b271c005b46\"},\"xLcSxTnAsel2M_JJVNELJpfhzFHglj0d\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/pm/backend/web/index.php?r=project%2Fview&id=5881836237d61b1ca0000487'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-frontend=573396a55bc16d1977ea534e49615b5eb5a0206ed189a481adf5ba6546cc84fca%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%2258787f3b37d61b271c005b46%22%7D%2C%22xLcSxTnAsel2M_JJVNELJpfhzFHglj0d%22%2C2592000%5D%22%3B%7D; _csrf-backend=305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT%22%3B%7D; advanced-backend=s2h3ng7jp7kql7378hg9inrqc5; _identity-backend=301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%2258787f3b37d61b271c005b46%22%7D%2C%22xLcSxTnAsel2M_JJVNELJpfhzFHglj0d%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '50207'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/pm/backend/web/index.php?r=project'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484882790.051
+    'REQUEST_TIME' => 1484882790
+]
+2017-01-20 08:03:59 [::1][-][s2h3ng7jp7kql7378hg9inrqc5][error][yii\mongodb\Exception] exception 'MongoDB\Driver\Exception\ConnectionException' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:289
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(289): MongoDB\Driver\Server->executeQuery('db_pm.user', Object(MongoDB\Driver\Query))
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#7 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#8 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#13 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#16 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#17 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#18 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#21 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#23 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#25 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:295
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#7 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#8 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#13 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#16 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#17 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#18 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#21 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#23 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+2017-01-20 08:03:59 [::1][-][s2h3ng7jp7kql7378hg9inrqc5][info][application] $_COOKIE = [
+    '_csrf-backend' => '305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT\";}'
+    'advanced-backend' => 's2h3ng7jp7kql7378hg9inrqc5'
+    '_identity-backend' => '301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"58787f3b37d61b271c005b46\"},\"xLcSxTnAsel2M_JJVNELJpfhzFHglj0d\",2592000]\";}'
+    '_csrf-frontend' => '4185b7bdb6fd284a8e5fb5e99e296501f9c44c1a0272e7b4f8d7bb4e2a8f19a6a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"VBTt7O9bo6AFqwFWjERlsZfdwss1ljj5\";}'
+    'advanced-frontend' => '25uf95ftfa770uo1jor1rhq1n3'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=305f7ac16658f31866c7bc04e5820d31b1f000e1b44cbbfce60c6107e36359caa%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22aYYgn0hHeyiaC7gOfmT2Jlyka797vGiT%22%3B%7D; advanced-backend=s2h3ng7jp7kql7378hg9inrqc5; _identity-backend=301e55812fcf3eb6dc028c370b2c75d5476d8ecdf6157afe6fcda12521810c57a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%2258787f3b37d61b271c005b46%22%7D%2C%22xLcSxTnAsel2M_JJVNELJpfhzFHglj0d%22%2C2592000%5D%22%3B%7D; _csrf-frontend=4185b7bdb6fd284a8e5fb5e99e296501f9c44c1a0272e7b4f8d7bb4e2a8f19a6a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22VBTt7O9bo6AFqwFWjERlsZfdwss1ljj5%22%3B%7D; advanced-frontend=25uf95ftfa770uo1jor1rhq1n3'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '52095'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pm/backend/web/index.php'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484895839.744
+    'REQUEST_TIME' => 1484895839
+]
+2017-01-20 13:02:01 [::1][-][-][error][yii\mongodb\Exception] exception 'MongoDB\Driver\Exception\ConnectionException' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:289
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(289): MongoDB\Driver\Server->executeQuery('db_pm.user', Object(MongoDB\Driver\Query))
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#7 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#8 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#13 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#16 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#17 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#18 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#21 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#23 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#25 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:295
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#7 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#8 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#13 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#16 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#17 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#18 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#21 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#23 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+2017-01-20 13:02:00 [::1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '057e81ecb2d19382cd07fe76f35e8533fa1bbc172a0bba2a7b38395aedfd919ba:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"5881b3f937d61b1ca000048d\"},\"zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=057e81ecb2d19382cd07fe76f35e8533fa1bbc172a0bba2a7b38395aedfd919ba%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%225881b3f937d61b1ca000048d%22%7D%2C%22zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '53144'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pm/backend/web/index.php'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1484913719.96
+    'REQUEST_TIME' => 1484913719
+]
+2017-01-21 14:54:17 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\assets\indextadk' not found' in D:\project\pm\backend\views\task\index.php:12
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-21 14:54:17 [::1][-][-][info][application] $_GET = [
+    'r' => 'task'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'ba9bd119018a421b53b0a711055f2061be6691f9bd1169eae6643ff9ebf5c12ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rVjDL17c8vetyeFcgL8Gjm4zlP6q_3pD\";}'
+    'advanced-backend' => '1peonajqsncn912nbbto14s171'
+    '_identity-backend' => '6fcb9cec958b01279ec4d2480147cf4e44632d0deb12992c081506f135b59feda:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"5881b3f937d61b1ca000048d\"},\"zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=ba9bd119018a421b53b0a711055f2061be6691f9bd1169eae6643ff9ebf5c12ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rVjDL17c8vetyeFcgL8Gjm4zlP6q_3pD%22%3B%7D; advanced-backend=1peonajqsncn912nbbto14s171; _identity-backend=6fcb9cec958b01279ec4d2480147cf4e44632d0deb12992c081506f135b59feda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%225881b3f937d61b1ca000048d%22%7D%2C%22zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '50290'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=task'
+    'REQUEST_URI' => '/pm/backend/web/index.php?r=task'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485006857.914
+    'REQUEST_TIME' => 1485006857
+]
+2017-01-21 14:54:45 [::1][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'backend\assets\indextadk' not found' in D:\project\pm\backend\views\project\index.php:15
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2017-01-21 14:54:45 [::1][-][-][info][application] $_GET = [
+    'r' => 'project'
+]
+
+$_COOKIE = [
+    '_csrf-backend' => 'ba9bd119018a421b53b0a711055f2061be6691f9bd1169eae6643ff9ebf5c12ba:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"rVjDL17c8vetyeFcgL8Gjm4zlP6q_3pD\";}'
+    'advanced-backend' => '1peonajqsncn912nbbto14s171'
+    '_identity-backend' => '6fcb9cec958b01279ec4d2480147cf4e44632d0deb12992c081506f135b59feda:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"5881b3f937d61b1ca000048d\"},\"zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://localhost/pm/backend/web/index.php?r'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_csrf-backend=ba9bd119018a421b53b0a711055f2061be6691f9bd1169eae6643ff9ebf5c12ba%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22rVjDL17c8vetyeFcgL8Gjm4zlP6q_3pD%22%3B%7D; advanced-backend=1peonajqsncn912nbbto14s171; _identity-backend=6fcb9cec958b01279ec4d2480147cf4e44632d0deb12992c081506f135b59feda%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%225881b3f937d61b1ca000048d%22%7D%2C%22zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '50296'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=project'
+    'REQUEST_URI' => '/pm/backend/web/index.php?r=project'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485006885.901
+    'REQUEST_TIME' => 1485006885
+]
+2017-01-22 14:50:24 [::1][-][-][error][yii\mongodb\Exception] exception 'MongoDB\Driver\Exception\ConnectionException' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:289
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(289): MongoDB\Driver\Server->executeQuery('db_pm.user', Object(MongoDB\Driver\Query))
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#7 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#8 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#13 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#16 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#17 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#18 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#21 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#23 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#25 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#26 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#27 {main}
+
+Next exception 'yii\mongodb\Exception' with message 'unknown top level operator: $oid' in D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php:295
+Stack trace:
+#0 D:\project\pm\vendor\yiisoft\yii2-mongodb\Command.php(617): yii\mongodb\Command->query('<span class="st...', '[]')
+#1 D:\project\pm\vendor\yiisoft\yii2-mongodb\Collection.php(218): yii\mongodb\Command->find('<span class="st...', '[<span class="s...', '[<span class="s...')
+#2 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(184): yii\mongodb\Collection->find('[<span class="s...', '[]', '[<span class="s...')
+#3 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(125): yii\mongodb\Query->buildCursor('<span class="ke...')
+#4 D:\project\pm\vendor\yiisoft\yii2-mongodb\Query.php(345): yii\mongodb\ActiveQuery->buildCursor('<span class="ke...')
+#5 D:\project\pm\vendor\yiisoft\yii2-mongodb\ActiveQuery.php(149): yii\mongodb\Query->one('<span class="ke...')
+#6 D:\project\pm\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\mongodb\ActiveQuery->one()
+#7 D:\project\pm\common\models\User.php(92): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#8 D:\project\pm\vendor\yiisoft\yii2\web\User.php(572): common\models\User::findIdentity('[<span class="s...')
+#9 D:\project\pm\vendor\yiisoft\yii2\web\User.php(294): yii\web\User->getIdentityAndDurationFromCookie()
+#10 D:\project\pm\vendor\yiisoft\yii2\web\User.php(682): yii\web\User->loginByCookie()
+#11 D:\project\pm\vendor\yiisoft\yii2\web\User.php(188): yii\web\User->renewAuthStatus()
+#12 D:\project\pm\vendor\yiisoft\yii2\web\User.php(340): yii\web\User->getIdentity()
+#13 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(148): yii\web\User->getIsGuest()
+#14 D:\project\pm\vendor\yiisoft\yii2\filters\AccessRule.php(103): yii\filters\AccessRule->matchRole(Object(yii\web\User))
+#15 D:\project\pm\vendor\yiisoft\yii2\filters\AccessControl.php(118): yii\filters\AccessRule->allows(Object(yii\base\InlineAction), Object(yii\web\User), Object(yii\web\Request))
+#16 D:\project\pm\vendor\yiisoft\yii2\base\ActionFilter.php(73): yii\filters\AccessControl->beforeAction(Object(yii\base\InlineAction))
+#17 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#18 D:\project\pm\vendor\yiisoft\yii2\base\Component.php(540): call_user_func('[<span class="t...', Object(yii\base\ActionEvent))
+#19 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(269): yii\base\Component->trigger('<span class="st...', Object(yii\base\ActionEvent))
+#20 D:\project\pm\vendor\yiisoft\yii2\web\Controller.php(108): yii\base\Controller->beforeAction(Object(yii\base\InlineAction))
+#21 D:\project\pm\vendor\yiisoft\yii2\base\Controller.php(152): yii\web\Controller->beforeAction(Object(yii\base\InlineAction))
+#22 D:\project\pm\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#23 D:\project\pm\vendor\yiisoft\yii2\web\Application.php(100): yii\base\Module->runAction('<span class="st...', '[]')
+#24 D:\project\pm\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#25 D:\project\pm\backend\web\index.php(17): yii\base\Application->run()
+#26 {main}
+2017-01-22 14:50:22 [::1][-][-][info][application] $_COOKIE = [
+    '_identity-backend' => '68c4db9ed30a34830f914641e7facb983ee82675fcb416e786c57bfee2853002a:2:{i:0;s:17:\"_identity-backend\";i:1;s:80:\"[{\"$oid\":\"5881b3f937d61b1ca000048d\"},\"zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp\",2592000]\";}'
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'localhost'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'th,en-US;q=0.8,en;q=0.6'
+    'HTTP_COOKIE' => '_identity-backend=68c4db9ed30a34830f914641e7facb983ee82675fcb416e786c57bfee2853002a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A80%3A%22%5B%7B%22%24oid%22%3A%225881b3f937d61b1ca000048d%22%7D%2C%22zldtOqKxs9Feg9veZ3okMjIBmw3DSwIp%22%2C2592000%5D%22%3B%7D'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x86;C:\\Program Files (x86)\\Intel\\OpenCL SDK\\2.0\\bin\\x64;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\;C:\\Program Files (x86)\\MySQL\\MySQL Fabric 1.5 & MySQL Utilities 1.5\\Doctrine extensions for PHP\\;D:\\apache-maven-3.3.3\\bin;C:\\Python27;C:\\Python27\\Scripts;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\ProgramData\\ComposerSetup\\bin;C:\\xampp\\php;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\mongodb\\bin\\;C:\\Program Files\\Java\\jdk1.7.0_79\\bin;C:\\Users\\TUM-PC\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\TUM-PC\\AppData\\Roaming\\npm;C:\\Users\\TUM-PC\\AppData\\Roaming\\Composer\\vendor\\bin'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28 Server at localhost Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.23 (Win32) OpenSSL/1.0.2h PHP/5.6.28'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => 'D:/project'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/project'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'D:/project/pm/backend/web/index.php'
+    'REMOTE_PORT' => '53780'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/pm/backend/web/index.php'
+    'SCRIPT_NAME' => '/pm/backend/web/index.php'
+    'PHP_SELF' => '/pm/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1485093022.153
+    'REQUEST_TIME' => 1485093022
+]
