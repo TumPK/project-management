@@ -15,15 +15,6 @@ createTaskAsset::register ( $this );
                         <div class="col-md-12 col-sm-12">
                             <!-- BEGIN PORTLET-->
                             <div class="portlet light bordered" id="form_wizard_1">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class=" icon-layers font-red"></i>
-                                        <span class="caption-subject font-red bold uppercase"> แก้ไขทีม -
-                                            <span class="step-title"> Step 1 of 2 </span>
-                                        </span>
-                                    </div>
-                                    
-                                </div>
                                 <div class="portlet-body form">
                                     <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
                                         <div class="form-wizard">

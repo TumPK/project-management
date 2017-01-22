@@ -8,8 +8,10 @@ use yii\widgets\ActiveForm;
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'สมาชิกทีม';
+$this->title = 'สมาชิกในทีม';
+$this->params['breadcrumbs'][] = ['label' => 'ทีม', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+
 indextadk::register ( $this );
 ?>
 <div class="team-view">

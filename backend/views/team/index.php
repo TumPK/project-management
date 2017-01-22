@@ -42,7 +42,7 @@ include 'extend.php';
                                	 	<input type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="เปิด" data-off="ปิด" data-size="mini">
                                 </h1>
                                 <center><div>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=team/update">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=team/update"; ?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -201,7 +201,7 @@ include 'extend.php';
 		<?php } ?>
 			<div class="col-md-4">
 				<div class="box box-solid">
-				<a href="http://localhost/project-management/backend/web/index.php?r=team/view"?>  
+				<a href="<?php echo $baseUrl."/index.php?r=team/view"; ?>"?>  
 					<div class="box-header with-border box-height">
 						<div class="text-right">
 							<?php echo $lebel[$field->status]; ?>
