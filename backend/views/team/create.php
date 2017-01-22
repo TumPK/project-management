@@ -19,10 +19,19 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="team-create">
 
-   <div class="row">
+    <div class="row">
                         <div class="col-md-12 col-sm-12">
                             <!-- BEGIN PORTLET-->
                             <div class="portlet light bordered" id="form_wizard_1">
+                                <div class="portlet-title">
+                                    <div class="caption">
+                                        <i class=" icon-layers font-red"></i>
+                                        <span class="caption-subject font-red bold uppercase"> แก้ไขทีม -
+                                            <span class="step-title"> Step 1 of 2 </span>
+                                        </span>
+                                    </div>
+                                    
+                                </div>
                                 <div class="portlet-body form">
                                     <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
                                         <div class="form-wizard">
@@ -60,8 +69,6 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <label class="col-md-3 control-label" style="align:right;">ชื่อทีม<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input type="text" class="form-control" placeholder="ชื่อโครงการ"></div>
                                     </div>
-                                   
-                                   
                                     <p></p>
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
@@ -69,9 +76,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea>
                                         </div>
                                     </div>
-                                   
+                                      </div>
                                     
-                                </div>
                                                     </div>
                                                     
                                                        
@@ -81,81 +87,10 @@ $this->params['breadcrumbs'][] = $this->title;
 						<div class="col-md-12" >
 						<div class="col-md-8" >
 						<ul class="nav nav-tabs">
-						<li class="active"><a href="#tab_0" data-toggle="tab" aria-expanded="true"> ทีม </a></li>
-						<li><a href="#tab_1" data-toggle="tab" > สมาชิก </a></li>
+						
+						<li> สมาชิก </li>
 						 </ul>
-						<div class="tab-content">
-								<div id="tab_0" class="tab-pane active">
-                              <div class="row">
-                                        <div class="col-md-8">
-                                        
-										<div class="col-md-8">
-                                             <input id="mepEmnNo" name="mepEmnNo" type="text" placeholder="ชื่อทีม" class="form-control input-circle">
-                                       </div>
-											
-                                        
-                                        
-                                        </div>
-                                   </div>
-                               <br><br>
-                                
-                                 <div class="col-md-8">
-                                    <table  width="100%" >
-                                        <thead>
-                                            <tr>
-                                                <th>ชื่อทีม</th>
-                                                <th ></th>
-                                                
-                                                
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr  height=70>
-                                                
-                                                <td>ทีมการจัดการโปรเจค</td>
-											  
-                                               
-                                              <td width="5%">
-                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only red">
-                                                                        <i class="fa fa-minus" style="font-size:20px"></i>
-                                                                    </a></p></td>
-                                            </tr>
-											<tr height=70>
-                                                
-                                                <td>ทีมปฏิทิน</td>
-												
-                                              
-                                               
-                                                <td width="5%">
-                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only green">
-                                                                        <i class="fa fa-plus" style="font-size:20px"></i>
-                                                                    </a></p></td>
-                                           
-                                               
-                                            </tr>
-											<tr height=70>
-                                                
-                                                <td>ทีมออกแบบ</td>
-												
-                                                
-										   <td width="5%">
-                                              <p align="center"><a href="javascript:;" class="btn btn-circle btn-icon-only green">
-                                                                        <i class="fa fa-plus" style="font-size:20px"></i>
-                                                                    </a></p></td>
-																	
-                                            </tr>
-                                            
-                                        </tbody>
-                                    </table>
-										</div>
-									
-									
-                                </div>
- 
-                    
-                    
-
-	    <div id="tab_1" class="tab-pane">
+						
  
                            
                             
@@ -225,14 +160,14 @@ $this->params['breadcrumbs'][] = $this->title;
                                 
                             
                             
-                        </div>
-                    </div></div>
+                    </div>
+                    
                
                 
                         <div class="col-md-4">
                         <div class="portlet light portlet-fit portlet-form bordered">
                         
-                        <center><h5>พนักงานภายในโครงการ</h5></center>
+                        <center><h5>สมาชิกภายในทีม</h5></center>
                			<table  width="100%">
                                         <thead>
                                             <tr>
@@ -241,29 +176,8 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr  height=20>
-                                           
-                                              <td style="text-align:center"><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/></td>
-                                                                    <td>ทีมการจัดการโครงการ <i class="fa fa-users" style="color:green"></i>
-                                                                    
-                                                                    </td>
-                                            </tr>
-                                            <tr>
-                                           
-                                              <td ></td>
-                                                                    <td>
-                                                                    <input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>ประทีป คงกล้า 
-                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
-                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>กฤษฎา หมัดอะดัม
-                                                                     <i class="fa fa-user" style="color:#32c5d2"></i>
-                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>สากีริน ขามิ๊
-                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
-                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>อัศม์เดช โส้สมัน
-                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
-                                                                    <br><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/>นัทธพงศ์ ซุ่นสั้น
-                                                                    <i class="fa fa-user" style="color:#32c5d2"></i>
-                                                                    </td>
-                                            </tr>
+                                            
+                                            
 											<tr height=50>
                                        
                                                <td style="text-align:center"><input type="checkbox" name="checkbox-1" id="checkbox-1" checked/></td>
@@ -285,7 +199,7 @@ $this->params['breadcrumbs'][] = $this->title;
         
     
                                                     </div>
-                                                    
+                                                   
                                                    
                                             
                                             <div class="form-actions">
@@ -296,7 +210,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                                         <a href="javascript:;" class="btn btn-outline green button-next"> ถัดไป
                                                             <i class="fa fa-angle-right"></i>
                                                         </a>
-                                                        <a href="javascript:;" class="btn green button-submit" style="display: none;"> สร้าง
+                                                        <a href="javascript:;" class="btn green button-submit" style="display: none;"> บันทึก
                                                             <i class="fa fa-check"></i>
                                                         </a>
                                                     </div></div>
