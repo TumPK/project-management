@@ -47,6 +47,12 @@ indextadk::register ( $this );
                                     <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=task/update";?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-send"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
                                   
                                 </div></center>
                                 <ul >
@@ -254,13 +260,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 76%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">76% progress</span>
+                                        <span style="width: 0%;" class="progress-bar progress-bar-success blue-sharp">
+                                            <span class="sr-only">0 progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> 0% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -277,13 +283,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 100%;" class="progress-bar progress-bar-success sharp">
-                                            <span class="sr-only">100% progress</span>
+                                        <span style="width: 0%;" class="progress-bar progress-bar-success sharp">
+                                            <span class="sr-only">0% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 100% </div>
+                                        <div class="status-number"> 0% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -301,13 +307,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 76%;" class="progress-bar progress-bar-success red">
-                                            <span class="sr-only">76% progress</span>
+                                        <span style="width: 0%;" class="progress-bar progress-bar-success red">
+                                            <span class="sr-only">0% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> 0% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -356,13 +362,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 100%;" class="progress-bar progress-bar-success sharp">
-                                            <span class="sr-only">100% progress</span>
+                                        <span style="width: 20%;" class="progress-bar progress-bar-success yellow">
+                                            <span class="sr-only">50% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 100% </div>
+                                        <div class="status-number"> 50% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -381,12 +387,12 @@ indextadk::register ( $this );
                                 <div class="progress-info">
                                     <div class="progress">
                                         <span style="width: 76%;" class="progress-bar progress-bar-success red">
-                                            <span class="sr-only">76% progress</span>
+                                            <span class="sr-only">90% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> 90% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -412,13 +418,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 76%;" class="progress-bar progress-bar-success blue-sharp">
-                                            <span class="sr-only">76% progress</span>
+                                        <span style="width: 100%;" class="progress-bar progress-bar-success sharp">
+                                            <span class="sr-only">100% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> 100% </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -460,13 +466,13 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 76%;" class="progress-bar progress-bar-success red">
-                                            <span class="sr-only">76% progress</span>
+                                        <span style="width: 100%;" class="progress-bar progress-bar-success sharp">
+                                            <span class="sr-only">100% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> 100% </div>
                                     </div>
                                 </div>
                             </div></a>
