@@ -49,3 +49,28 @@ hr, p {
 .portlet.light.bordered {
     margin-top: 10px !important;
 }
+
+.page-quick-sidebar-wrapper .page-quick-sidebar {
+    background: #fafcfb !important;
+}
+
+.page-quick-sidebar-wrapper {
+    background: #fafcfb !important;
+	color: #555;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .nav-tabs>li.active>a, .page-quick-sidebar-wrapper .page-quick-sidebar .nav-tabs>li:hover>a {
+    color: #999 !important;
+}
+
+element.style {
+    color: #999 !important;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .list-items>li {
+    border-bottom-color: #fafcfb !important;
+}
+
+.page-quick-sidebar-wrapper .page-quick-sidebar .list-items>li:hover {
+    background: rgba(0, 0, 0, 0.14) !important;
+}
