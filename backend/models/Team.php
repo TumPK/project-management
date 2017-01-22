@@ -66,4 +66,23 @@ class Team extends \yii\mongodb\ActiveRecord
             'member' => 'Member',
         ];
     }
+    public function findAllTeam($name,$status,$sort){
+    	$conditions = [];
+    	$query = Team::find();
+    	if(!empty($status)){
+    		$conditions['status'] = $status;
+    	}
+    	if(!empty($sort)){
+    		$conditions['sort'] = $sort;
+    	}
+    	if(!empty($conditions)){
+    		$query->where($conditions);
+    	}
+    	if(!empty($name)){
+    		$query->andWhere(['like', "team_name", $name]);
+    	}
+    	 
+    	$value = $query->all();
+    	return $value;
+    }
 }

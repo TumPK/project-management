@@ -24,7 +24,7 @@
                 	['label' => 'ตั้งค่า', 'icon' => 'fa fa-cog', 'url' => ['/']],
                 	['label' => 'ประเภทโครงการ', 'icon' => 'fa fa-bookmark', 'url' => ['/']],
                 	['label' => 'ปฏิทิน', 'icon' => 'fa fa-calendar', 'url' => ['/']],
-                	['label' => 'ทีม', 'icon' => 'fa fa-users', 'url' => ['/']],
+                	['label' => 'ทีม', 'icon' => 'fa fa-users', 'url' => ['/team']],
                 	['label' => 'โครงการ', 'icon' => 'fa fa-file', 'url' => ['/project']],
                 	['label' => 'งาน', 'icon' => 'fa fa-tasks', 'url' => ['/task']],
                     ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
