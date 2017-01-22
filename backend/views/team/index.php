@@ -13,7 +13,7 @@ $baseUrl = \Yii::getAlias('@web');
 $this->title = 'ทีม';
 $this->params['breadcrumbs'][] = $this->title;
 indextadk::register ( $this );
-
+include 'extend.php';
 ?>
 
 <div class="team-index">
@@ -38,12 +38,11 @@ indextadk::register ( $this );
                     <div class="tab-content">
                         <div class="tab-pane page-quick-sidebar-chat active" id="quick_sidebar_tab_1">
                             <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 328px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="328" data-initialized="1" style="overflow: hidden; width: auto; height: 328px;">
-                                <h1 class="list-heading" style="text-align:center">ทีมทดสอบ</h1>
+                                <h1 class="list-heading" style="text-align:center">ทีมทดสอบ
+                               	 	<input type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="เปิด" data-off="ปิด" data-size="mini">
+                                </h1>
                                 <center><div>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/update">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=team/update">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -52,29 +51,27 @@ indextadk::register ( $this );
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-ban"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/setting">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
                                 </div></center>
                                 <ul >
                                     <li >
-                                        
-                                        
                                         <div>
                                             <h5>คำอธิบายทีม      สุดยอด</h4>
-                                           
                                         </div>
                                     </li>
                                     <li >
                                         <div>
-                                            <h5>จำนวนสมาชิก      50</h4>
-                                           
+                                            <h5>จำนวนสมาชิก      4 คน</h4>
+                                            <ul>
+                                            	<li>ออฟฟิต ออฟฟิต </li>
+                                            	<li>นัทธพงศ์  ซุ่นสั่น </li>
+                                            	<li>ปารีส นี่น่า </li>
+                                            	<li>ยูเซอร์ โนพาวเวอร์</li>
+                                            </ul>
                                         </div>
                                     </li>
                                     <li >
                                         <div>
                                             <h5>วันที่สร้าง        12/31/2016</h4>
-                                           
                                         </div>
                                     </li>
                                    
@@ -206,7 +203,9 @@ indextadk::register ( $this );
 				<div class="box box-solid">
 				<a href="http://localhost/project-management/backend/web/index.php?r=team/view"?>  
 					<div class="box-header with-border box-height">
-						
+						<div class="text-right">
+							<?php echo $lebel[$field->status]; ?>
+						</div>
 						<div class="text-left">
 							<?php echo $field->team_name; ?>
 						</div>
