@@ -43,7 +43,7 @@ include 'extend.php';
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-folder-open-o"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_editproject.html">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/update">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -52,7 +52,7 @@ include 'extend.php';
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-ban"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="ui_settingproject.html">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/setting">
                                         <i class="fa fa-cogs"></i>
                                     </a>
                                 </div></center>
