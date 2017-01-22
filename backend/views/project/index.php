@@ -38,7 +38,9 @@ include 'extend.php';
                     <div class="tab-content">
                         <div class="tab-pane page-quick-sidebar-chat active" id="quick_sidebar_tab_1">
                             <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 328px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="328" data-initialized="1" style="overflow: hidden; width: auto; height: 328px;">
-                                <h1 class="list-heading" style="text-align:center">โปรแกรมดนตรีไทยแสนสนุก</h1>
+                                <h1 class="list-heading" style="text-align:center">โปรแกรมดนตรีไทยแสนสนุก
+                                <input type="checkbox" checked data-toggle="toggle" data-style="ios" data-on="เปิด" data-off="ปิด" data-size="mini">
+                                </h1>
                                 <center><div>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-folder-open-o"></i>
