@@ -6,6 +6,7 @@ use backend\assets\createTaskAsset;
 /* @var $model backend\models\Task */
 
 $this->title = 'แก้ไขโครงการ';
+$this->params['breadcrumbs'][] = ['label' => 'โครงการ', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 createTaskAsset::register ( $this );
 ?>
@@ -15,15 +16,6 @@ createTaskAsset::register ( $this );
                         <div class="col-md-12 col-sm-12">
                             <!-- BEGIN PORTLET-->
                             <div class="portlet light bordered" id="form_wizard_1">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class=" icon-layers font-red"></i>
-                                        <span class="caption-subject font-red bold uppercase"> สร้างโครงการ -
-                                            <span class="step-title"> Step 1 of 3 </span>
-                                        </span>
-                                    </div>
-                                    
-                                </div>
                                 <div class="portlet-body form">
                                     <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
                                         <div class="form-wizard">
@@ -81,7 +73,7 @@ createTaskAsset::register ( $this );
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea><br>
+                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea>
                                         </div>
                                     </div>
                                     <p></p>

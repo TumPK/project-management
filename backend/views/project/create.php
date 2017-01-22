@@ -10,8 +10,8 @@ use backend\assets\createTaskAsset;
 createTaskAsset::register ( $this );
 
 
-$this->title = 'Create Project';
-$this->params['breadcrumbs'][] = ['label' => 'Projects', 'url' => ['index']];
+$this->title = 'สร้างโครงการ';
+$this->params['breadcrumbs'][] = ['label' => 'โครงการ', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="project-create">
@@ -20,15 +20,6 @@ $this->params['breadcrumbs'][] = $this->title;
                         <div class="col-md-12 col-sm-12">
                             <!-- BEGIN PORTLET-->
                             <div class="portlet light bordered" id="form_wizard_1">
-                                <div class="portlet-title">
-                                    <div class="caption">
-                                        <i class=" icon-layers font-red"></i>
-                                        <span class="caption-subject font-red bold uppercase"> สร้างโครงการ -
-                                            <span class="step-title"> Step 1 of 3 </span>
-                                        </span>
-                                    </div>
-                                    
-                                </div>
                                 <div class="portlet-body form">
                                     <form action="#" class="form-horizontal" id="submit_form" method="POST" novalidate="novalidate">
                                         <div class="form-wizard">
@@ -86,7 +77,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
                                         <div class="col-md-6">
-                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea><br>
+                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea>
                                         </div>
                                     </div>
                                     <p></p>

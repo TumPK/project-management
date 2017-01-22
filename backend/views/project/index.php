@@ -43,7 +43,7 @@ include 'extend.php';
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-folder-open-o"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/update">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=project/update";?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -52,59 +52,50 @@ include 'extend.php';
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
                                         <i class="fa fa-ban"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/setting">
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=project/setting";?>">
                                         <i class="fa fa-cogs"></i>
                                     </a>
                                 </div></center>
                                 <ul >
                                     <li >
-                                        
-                                        
                                         <div>
                                             <h5>คำอธิบายโปรเจค      สุดยอด</h4>
-                                           
                                         </div>
                                     </li>
                                     <li >
                                         <div>
                                             <h5>วันเริ่มต้น      12/01/2016</h4>
-                                           
                                         </div>
                                     </li>
                                     <li >
                                         <div>
                                             <h5>วันสิ้นสุด      12/31/2016</h4>
-                                           
                                         </div>
                                     </li>
                                     <li >
                                        <div>
                                             <h5>ผู้จัดการโครงการ     เป้ลี่ อยากมียูเอฟโอ</h4>
-                                           
                                         </div>
                                     </li>
                                 </ul>
                                 <h3 class="list-heading">ความคิดเห็น</h3>
                                 <ul class="media-list list-items">
                                     <li class="media">
-                                       
-                                        <img class="media-object" src="../assets/layouts/layout/img/avatar6.jpg" alt="...">
+                                        <img class="media-object" src="../web/assets/6df06715/img/user2-160x160.jpg" alt="...">
                                         <div class="media-body">
                                             <h4 class="media-heading-sub">Lara Kunis</h4>
-                                            
                                             <div > ดีมาก</div>
                                         </div>
                                     </li>
                                     <li class="media">
-                                        
-                                        <img class="media-object" src="../assets/layouts/layout/img/avatar7.jpg" alt="...">
+                                        <img class="media-object" src="../web/assets/6df06715/img/user2-160x160.jpg" alt="...">
                                         <div class="media-body">
                                             <h4 class="media-heading-sub">Ernie Kyllonen</h4>
                                              <div > ดีมาก</div>
                                         </div>
                                     </li>
                                     <li class="media">
-                                        <img class="media-object" src="../assets/layouts/layout/img/avatar8.jpg" alt="...">
+                                        <img class="media-object" src="../web/assets/6df06715/img/user2-160x160.jpg" alt="...">
                                         <div class="media-body">
                                             <h4 class="media-heading-sub">Lisa Stone</h4>
                                               <div > ดีมาก</div>
@@ -112,13 +103,10 @@ include 'extend.php';
                                     </li>
                                     
                                    <div class="media">
-                                  
-                                   		<img class="media-object" src="../assets/layouts/layout/img/avatar8.jpg" alt="...">
-                                   		
+                                   		<img class="media-object" src="../web/assets/6df06715/img/user2-160x160.jpg" alt="...">
                                          <div class="col-md-7"><input type="text" class="form-control" placeholder="แสดงความคิดเห็น"></div>
                                          <label class="col-md-2 control-label" style="align:right;">ส่ง</label>
                                    </div>
-                                    
                                 </ul>
                                 
                             </div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-radius: 7px; z-index: 99; right: 1px; height: 123.235px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(221, 221, 221); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
@@ -130,7 +118,7 @@ include 'extend.php';
                                     </div>
                                     <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 223px;"><div class="page-quick-sidebar-chat-user-messages" data-height="223" data-initialized="1" style="overflow: hidden; width: auto; height: 223px;">
                                         <div class="post out">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar3.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Bob Nilson</a>
@@ -139,7 +127,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post in">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar2.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Ella Wong</a>
@@ -148,7 +136,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post out">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar3.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Bob Nilson</a>
@@ -157,7 +145,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post in">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar2.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Ella Wong</a>
@@ -166,7 +154,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post out">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar3.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Bob Nilson</a>
@@ -175,7 +163,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post in">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar2.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Ella Wong</a>
@@ -184,7 +172,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post out">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar3.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Bob Nilson</a>
@@ -193,7 +181,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post in">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar2.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Ella Wong</a>
@@ -202,7 +190,7 @@ include 'extend.php';
                                             </div>
                                         </div>
                                         <div class="post out">
-                                            <img class="avatar" alt="" src="../assets/layouts/layout/img/avatar3.jpg">
+                                            <img class="avatar" alt="" src="../web/assets/6df06715/img/user2-160x160.jpg">
                                             <div class="message">
                                                 <span class="arrow"></span>
                                                 <a href="javascript:;" class="name">Bob Nilson</a>
@@ -279,10 +267,6 @@ include 'extend.php';
                                             <div class="date"> Just now </div>
                                         </div>
                                     </li>
-                                    
-                                    
-                                    
-                                   
                                    
                                     <li>
                                         <a href="javascript:;">
@@ -345,7 +329,7 @@ include 'extend.php';
 		<?php } ?>
 			<div class="col-md-4">
 				<div class="box box-solid">
-				<a href="http://localhost/project-management/backend/web/index.php?r=task"?>  
+				<a href="<?php echo $baseUrl."/index.php?r=task"?>"?>  
 					<div class="box-header with-border box-height">
 						<div class="text-right">
 							<?php echo $lebel[$field->status]; ?>
@@ -360,7 +344,7 @@ include 'extend.php';
 							<div class="text-right">
 								<a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
 									<span>รายละเอียด</span>
-									<i class="fa fa-angle-right"></i>
+									<i class="fa fa-angle-right"></i>&nbsp;
 								</a>
 							</div>
 						</div>

@@ -50,6 +50,7 @@ class createTaskAsset extends AssetBundle
          'assetsThai/global/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css',
         'assetsThai/global/plugins/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css',
          'assetsThai/global/plugins/clockface/css/clockface.css',
+    	 'css/pm.css',
    		
     ];
    public $cssOptions = ['position' => \yii\web\View::POS_HEAD];
