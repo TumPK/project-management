@@ -40,21 +40,11 @@ indextadk::register ( $this );
                             <div class="page-quick-sidebar-list" style="position: relative; overflow: hidden; width: auto; height: 328px;"><div class="page-quick-sidebar-chat-users" data-rail-color="#ddd" data-wrapper-class="page-quick-sidebar-list" data-height="328" data-initialized="1" style="overflow: hidden; width: auto; height: 328px;">
                                 <h1 class="list-heading" style="text-align:center">ทีมทดสอบ</h1>
                                 <center><div>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-folder-open-o"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/update">
+                                 
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=team/update">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-archive"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-ban"></i>
-                                    </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="http://localhost/project-management/backend/web/index.php?r=project/setting">
-                                        <i class="fa fa-cogs"></i>
-                                    </a>
+                                   
                                 </div></center>
                                 <ul >
                                     <li >
