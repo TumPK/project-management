@@ -244,9 +244,9 @@ indextadk::register ( $this );
     <div class="portlet light bordered">
            <p align="center">    TO DO</p>
                 
-                 <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
+                
                   <div class="dashboard-stat2 bordered blue">
-                           
+                            <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                              <div class="display"> 
                                     <div class="number">
                                         
@@ -255,7 +255,7 @@ indextadk::register ( $this );
                                     
                                        
                                     </div>
-                                   
+                                   </a>
                                     
                                 </div>
                                 <div class="progress-info">
@@ -266,10 +266,23 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 0% </div>
+                                        <div class="status-number"> 
+                                        <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" >100%</option>
+					</select> </div>
                                     </div>
                                 </div>
-                            </div></a>
+                            </div>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
                                 <div class="display">
@@ -289,7 +302,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 0% </div>
+                                        <div class="status-number"><select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" >100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -313,7 +338,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 0% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" >100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -344,7 +381,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 76% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" selected>70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" >100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -363,12 +412,24 @@ indextadk::register ( $this );
                                 <div class="progress-info">
                                     <div class="progress">
                                         <span style="width: 20%;" class="progress-bar progress-bar-success yellow">
-                                            <span class="sr-only">50% progress</span>
+                                            <span class="sr-only">20% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 50% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2"  selected>20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" >100%</option>
+					</select> </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -386,13 +447,25 @@ indextadk::register ( $this );
                                 </div>
                                 <div class="progress-info">
                                     <div class="progress">
-                                        <span style="width: 76%;" class="progress-bar progress-bar-success red">
+                                        <span style="width: 90%;" class="progress-bar progress-bar-success red">
                                             <span class="sr-only">90% progress</span>
                                         </span>
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 90% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" selected>90%</option>
+						<option value="4" >100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -424,7 +497,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 100% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" selected>100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -448,7 +533,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 100% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" selected>100%</option>
+					</select>  </div>
                                     </div>
                                 </div>
                             </div></a>
@@ -472,7 +569,19 @@ indextadk::register ( $this );
                                     </div>
                                     <div class="status">
                                         <div class="status-title"> progress </div>
-                                        <div class="status-number"> 100% </div>
+                                        <div class="status-number"> <select id="status" name="status" >
+						<option value="" >0%</option>
+                        <option value="1" >10%</option>
+						<option value="2" >20%</option>
+						<option value="3" >30%</option>
+						<option value="4" >40%</option>
+						<option value="" >50%</option>
+                        <option value="1" >60%</option>
+						<option value="2" >70%</option>
+						<option value="3" >80%</option>
+						<option value="4" >90%</option>
+						<option value="4" selected>100%</option>
+					</select> </div>
                                     </div>
                                 </div>
                             </div></a>
