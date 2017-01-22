@@ -32,7 +32,7 @@ createTaskAsset::register ( $this );
                                                         <a href="#tab2" data-toggle="tab" class="step">
                                                             <span class="number"> 2 </span>
                                                             <span class="desc">
-                                                                <i class="fa fa-check"></i> สมาชิกในงาน </span>
+                                                                <i class="fa fa-check"></i> ผู้รับผิดชอบงาน </span>
                                                         </a>
                                                     </li>
                                                     
@@ -162,7 +162,7 @@ createTaskAsset::register ( $this );
                         <div class="col-md-4">
                         <div class="portlet light portlet-fit portlet-form bordered">
                         
-                        <center><h5>สมาชิกภายในทีม</h5></center>
+                        <center><h5>ผู้รับผิดชอบงาน</h5></center>
                			<table  width="100%">
                                         <thead>
                                             <tr>
