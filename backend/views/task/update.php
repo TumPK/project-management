@@ -48,7 +48,7 @@ createTaskAsset::register ( $this );
                                                         <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
                                                     <div class="tab-pane active" id="tab1">
                                                         
-                                                        <div class="portlet-body">
+                            <div class="portlet-body">
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">ชื่องาน<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input type="text" class="form-control" placeholder="ชื่อโครงการ"></div>

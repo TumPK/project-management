@@ -60,7 +60,7 @@ $this->title = '';
                                        <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำค้น</label>
                                         <div class="col-md-6"><input type="text" class="form-control" placeholder="คำค้น"></div>
-                                       <p></p>
+                                       </div><p></p>
                                     <div class="row">
                                         <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
                                         <div class="col-md-6">
