@@ -54,10 +54,10 @@ class TeamController extends Controller
      * @param integer $_id
      * @return mixed
      */
-    public function actionView($id)
+    public function actionView()
     {
         return $this->render('view', [
-            'model' => $this->findModel($id),
+           
         ]);
     }
 
