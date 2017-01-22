@@ -8,7 +8,7 @@ $baseUrl = \Yii::getAlias('@web');
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'MyTasks';
+$this->title = 'งาน';
 $this->params['breadcrumbs'][] = $this->title;
 indextadk::register ( $this );
 ?>
@@ -16,8 +16,9 @@ indextadk::register ( $this );
 
      
 
-    <p>
-        <?= Html::a('Create Task', ['create'], ['class' => 'btn btn-success']) ?>
+    <p align="right">
+       
+         <?= Html::a('<i class="fa fa-plus"></i> สร้างงาน', ['create'], ['class' => 'btn btn-success','style'=>'text-align: right;']) ?>
     </p>
     <div class="page-quick-sidebar-wrapper" data-close-on-body-click="false">
             <a href="javascript:;" class="page-quick-sidebar-toggler">
