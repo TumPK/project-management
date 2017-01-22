@@ -61,7 +61,13 @@ createTaskAsset::register ( $this );
                                         <label class="col-md-3 control-label" style="align:right;">ชื่อทีม<span style="color:red;"> * </span></label>
                                         <div class="col-md-6"><input type="text" class="form-control" placeholder="ชื่อโครงการ"></div>
                                     </div>
-                                    
+                                    <p></p>
+                                    <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">คำอธิบาย</label>
+                                        <div class="col-md-6">
+                                            <textarea class="form-control" rows="4" placeholder="คำอธิบาย"></textarea>
+                                        </div>
+                                    </div>
                                    
                                     </div>
                                     
