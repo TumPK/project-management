@@ -2,6 +2,7 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use yii\widget\Block;
 use backend\assets\indextadk;
 use yii\widgets\ActiveForm;
 
@@ -303,7 +304,7 @@ indextadk::register ( $this );
         <!-- END CONTAINER -->
         <!-- BEGIN FOOTER -->
     
-	
+	</div>
                         
         
 		<!-- /.modal -->
@@ -355,4 +356,4 @@ indextadk::register ( $this );
                                         </div>
                                     </div>
        
-                                    </div> </div>
+                                    </div> 
