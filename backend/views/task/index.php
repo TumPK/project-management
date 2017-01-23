@@ -331,8 +331,9 @@ indextadk::register ( $this );
   	
     <div class="portlet light bordered">
     			<p align="center">  DOING</p>
-                   <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
+                  
                   <div class="dashboard-stat2 bordered blue">
+                   <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div align="right">
 	                  			<span>...</span>
                   			</div>
@@ -345,8 +346,8 @@ indextadk::register ( $this );
                                        
                                     </div>
                                    
-                                    
-                                </div>
+                                   
+                                </div> </a>
                                 <div class="progress-info">
                                     <div class="progress">
                                         <span style="width: 76%;" class="progress-bar progress-bar-success blue-sharp">
@@ -370,9 +371,10 @@ indextadk::register ( $this );
 					</select>  </div>
                                     </div>
                                 </div>
-                            </div></a>
-                            <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
+                            </div>
+                            
                             <div class="dashboard-stat2 bordered blue">
+                            <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                              <div align="right">
 	                  			<span>...</span>
                   			</div>
@@ -385,7 +387,7 @@ indextadk::register ( $this );
                                         
                                     </div>
                                     
-                                </div>
+                                </div></a>
                                 <div class="progress-info">
                                     <div class="progress">
                                         <span style="width: 20%;" class="progress-bar progress-bar-success yellow">
@@ -409,9 +411,10 @@ indextadk::register ( $this );
 					</select> </div>
                                     </div>
                                 </div>
-                            </div></a>
-                            <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
+                            </div>
+                            
                             <div class="dashboard-stat2 bordered blue">
+                            <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                                  <div align="right">
 	                  			<span>...</span>
                   			</div>
@@ -424,7 +427,7 @@ indextadk::register ( $this );
                                         
                                     </div>
                                     
-                                </div>
+                                </div></a>
                                 <div class="progress-info">
                                     <div class="progress">
                                         <span style="width: 90%;" class="progress-bar progress-bar-success red">
@@ -448,7 +451,7 @@ indextadk::register ( $this );
 					</select>  </div>
                                     </div>
                                 </div>
-                            </div></a>
+                            </div>
                             </div></div>
           			
              <div class="col-md-4">
