@@ -246,10 +246,12 @@ indextadk::register ( $this );
                 
                 
                   <div class="dashboard-stat2 bordered blue">
+                  			<div align="right">
+	                  			<span>...</span>
+                  			</div>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                              <div class="display"> 
                                     <div class="number">
-                                        
                                             <span>task1</span>
                                             
                                     
@@ -285,6 +287,9 @@ indextadk::register ( $this );
                             </div>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                        
@@ -320,6 +325,9 @@ indextadk::register ( $this );
                             </div></a>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                        
@@ -361,7 +369,9 @@ indextadk::register ( $this );
     			<p align="center">  DOING</p>
                    <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                   <div class="dashboard-stat2 bordered blue">
-                           
+                           	<div align="right">
+	                  			<span>...</span>
+                  			</div>
                              <div class="display"> 
                                     <div class="number">
                                         
@@ -399,6 +409,9 @@ indextadk::register ( $this );
                             </div></a>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                         
@@ -435,6 +448,9 @@ indextadk::register ( $this );
                             </div></a>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                        
@@ -477,7 +493,9 @@ indextadk::register ( $this );
                 
                   <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                   <div class="dashboard-stat2 bordered blue">
-                           
+                           	<div align="right">
+	                  			<span>...</span>
+                  			</div>
                              <div class="display"> 
                                     <div class="number">
                                         
@@ -515,6 +533,9 @@ indextadk::register ( $this );
                             </div></a>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                        
@@ -551,6 +572,9 @@ indextadk::register ( $this );
                             </div></a>
                             <a href="javascript:;" class="dropdown dropdown-extended quick-sidebar-toggler">
                             <div class="dashboard-stat2 bordered blue">
+                            	<div align="right">
+		                  			<span>...</span>
+	                  			</div>
                                 <div class="display">
                                     <div class="number">
                                        

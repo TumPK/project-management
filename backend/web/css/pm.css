@@ -74,9 +74,14 @@ element.style {
     border-bottom-color: #fafcfb !important;
 }
 
+
 .page-quick-sidebar-wrapper .page-quick-sidebar .list-items>li:hover {
     background: rgba(0, 0, 0, 0.14) !important;
 }
 
 .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
 .toggle.ios .toggle-handle { border-radius: 20px; }
+
+.dashboard-stat2 {
+    padding: 1px 15px 30px !important;
+}
