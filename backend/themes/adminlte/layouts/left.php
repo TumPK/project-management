@@ -19,7 +19,7 @@
                 'options' => ['class' => 'sidebar-menu'],
                 'items' => [
                      ['label' => 'บุคลากร', 'icon' => 'fa fa-user', 'url' => ['/']],
-                	['label' => 'บทบาท', 'icon' => 'fa fa-user-secret', 'url' => ['/']],
+                	['label' => 'บทบาท', 'icon' => 'fa fa-user-secret', 'url' => ['/role']],
                 	['label' => 'สิทธฺิ์', 'icon' => 'fa fa-lock', 'url' => ['/']],
                 	['label' => 'ตั้งค่า', 'icon' => 'fa fa-cog', 'url' => ['/']],
                 	['label' => 'ประเภทโครงการ', 'icon' => 'fa fa-bookmark', 'url' => ['/category']],
@@ -27,6 +27,7 @@
                 	['label' => 'ทีม', 'icon' => 'fa fa-users', 'url' => ['/team']],
                 	['label' => 'โครงการ', 'icon' => 'fa fa-file', 'url' => ['/project']],
                 	['label' => 'งาน', 'icon' => 'fa fa-tasks', 'url' => ['/task']],
+                	['label' => 'อนุมัติ', 'icon' => 'fa fa-tasks', 'url' => ['/approve']],
                     ['label' => 'Gii', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
                     ['label' => 'Debug', 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
