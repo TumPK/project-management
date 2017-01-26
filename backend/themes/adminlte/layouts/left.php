@@ -22,7 +22,7 @@
                 	['label' => 'บทบาท', 'icon' => 'fa fa-user-secret', 'url' => ['/']],
                 	['label' => 'สิทธฺิ์', 'icon' => 'fa fa-lock', 'url' => ['/']],
                 	['label' => 'ตั้งค่า', 'icon' => 'fa fa-cog', 'url' => ['/']],
-                	['label' => 'ประเภทโครงการ', 'icon' => 'fa fa-bookmark', 'url' => ['/']],
+                	['label' => 'ประเภทโครงการ', 'icon' => 'fa fa-bookmark', 'url' => ['/category']],
                 	['label' => 'ปฏิทิน', 'icon' => 'fa fa-calendar', 'url' => ['/']],
                 	['label' => 'ทีม', 'icon' => 'fa fa-users', 'url' => ['/team']],
                 	['label' => 'โครงการ', 'icon' => 'fa fa-file', 'url' => ['/project']],
