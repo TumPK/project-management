@@ -77,7 +77,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                         <div class="modal-body">
                                                 
                                                         <div class="row">
-                                                        <div class="col-md-5"></div>
+                                                        <div class="col-md-4"></div>
                                                         <div class="col-md-4">
                                                  <span>อนุมัติ  </span><input type="radio" name="checkbox-1" id="checkbox-1" />
                                                   <span>    ไม่อนุมัติ  </span><input type="radio" name="checkbox-1" id="checkbox-1" /></div>
