@@ -35,9 +35,9 @@ class CategoryController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Category::find(),
-        ]);
+    	$query = Category::find();
+        $dataProvider = $query->all();
+        
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,
