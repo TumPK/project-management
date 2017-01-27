@@ -47,7 +47,7 @@ indextadk::register ( $this );
                                     <a class="btn btn-circle btn-icon-only btn-default" href="<?php echo $baseUrl."/index.php?r=task/update";?>">
                                         <i class="fa fa-edit"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                    <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#sendtask">
                                         <i class="fa fa-send"></i>
                                     </a>
                                     <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
@@ -544,3 +544,30 @@ indextadk::register ( $this );
     </div>
     
 </div>
+<!-- /.modal -->
+                                    <div class="modal fade" id="sendtask" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                                                    <h4 class="modal-title">ขออนุมัติงาน</h4>
+                                                </div>
+                                        <div class="modal-body">
+                                              <div class="row">
+                                        <label class="col-md-3 control-label" style="align:right;">ชื่องาน<span>      Task1</span></label>
+                                        
+                                    </div>
+                                  
+			            				</div>
+			            				
+                                       
+                                                <div class="modal-footer">
+                                               
+                                                    <button type="button" data-dismiss="modal" class="btn green">ยกเลิก</button>
+                                                    <button id="saveEdit" type="button" class="btn green" >ขออนุมัติ</button>
+                                                
+                                                </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                      <!-- /.modal -->                 

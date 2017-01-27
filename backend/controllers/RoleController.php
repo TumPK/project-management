@@ -35,9 +35,9 @@ class RoleController extends Controller
      */
     public function actionIndex()
     {
-        $dataProvider = new ActiveDataProvider([
-            'query' => Role::find(),
-        ]);
+        $query = Role::find();
+        $dataProvider = $query->all();
+        
 
         return $this->render('index', [
             'dataProvider' => $dataProvider,

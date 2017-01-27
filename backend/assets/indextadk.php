@@ -17,7 +17,7 @@ class indextadk extends AssetBundle
         'http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700',
         'assetsThai/global/plugins/font-awesome/css/font-awesome.min.css',
         'assetsThai/global/plugins/simple-line-icons/simple-line-icons.min.css',
-       'assetsThai/global/plugins/bootstrap/css/bootstrap.min.css',
+   
         'assetsThai/global/plugins/uniform/css/uniform.default.css',
         'assetsThai/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css',
        //END GLOBAL MANDATORY STYLES 
@@ -59,7 +59,7 @@ class indextadk extends AssetBundle
     		
     		//BEGIN CORE PLUGINS -->
         'assetsThai/global/plugins/jquery.min.js',
-        'assetsThai/global/plugins/bootstrap/js/bootstrap.min.js',
+        
         'assetsThai/global/plugins/js.cookie.min.js',
         'assetsThai/global/plugins/bootstrap-hover-dropdown/bootstrap-hover-dropdown.min.js',
        'assetsThai/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js',
