@@ -2,10 +2,11 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
+use backend\assets\indextadk;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+indextadk::register ( $this );
 $this->title = 'อนุมัติงาน';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -13,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
    
     
-                           
+              <div class="portlet light bordered">               
                            
    <table  width="100%" >
     <thead>
@@ -35,11 +36,9 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <td width="10%">
                                             <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#approvetask"> 
                                              
-                                        <i class="fa fa-folder-open-o"></i>
+                                        <i class="fa fa-pencil"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
+                               
                                     </td>
                                     </tr>
                                     <tr height=50>
@@ -52,11 +51,9 @@ $this->params['breadcrumbs'][] = $this->title;
                                             <td width="10%">
                                             <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#approvetask"> 
                                              
-                                        <i class="fa fa-folder-open-o"></i>
+                                        <i class="fa fa-pencil"></i>
                                     </a>
-                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
-                                        <i class="fa fa-trash"></i>
-                                    </a>
+
                                     </td>
                                     </tr>
                                             
@@ -64,7 +61,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </table>
                                             
                                             
-</div>
+</div></div>
  
 		<!-- /.modal -->
                                     <div class="modal fade" id="approvetask" tabindex="-1" role="dialog" aria-hidden="true">

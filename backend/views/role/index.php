@@ -4,9 +4,10 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 use backend\models\Role;
 use backend\assets\indextadk;
+
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+indextadk::register ( $this );
 $this->title = 'บทบาท';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -17,25 +18,25 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
        <a class="btn btn-success" data-toggle="modal" href="#createrole"> <span>สร้างบทบาท</span></a> 
     </p>
-    
+    <div class="portlet light bordered">
                            
                            
-   <table  width="100%" >
+      <table  width="100%" >
     <thead>
                                             <tr height=50>
-                                                <th>ประเภท</th>
+                                                <th>ชื่อบทบาท</th>
                                                 
                                                 
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <?php foreach( $dataProvider as $role) :?>
+                                       
                                             <tr height=50>
                                                 	
-                                                <td><?php echo $role->category_name ?></td>
-											  
+                                                <td>ผู้ดูแลระบบ</td>
+											    <td>รายละเอียด</td>
                                                 <td> 
-                                                <?php if ($role->status == 1):?>เปิด<?php else:?>ปิด<?php  endif;?>
+                                             			   เปิด
                                                        </td>
                                             <td width="10%">
                                             <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#deleterole"> 
@@ -47,12 +48,47 @@ $this->params['breadcrumbs'][] = $this->title;
                                     </a>
                                     </td>
                                     </tr>
-                                            <?php endforeach;?>
+                                      <tr height=50>
+                                                	
+                                                <td>ผู้ใช้งานทั่วไป</td>
+											    <td>รายละเอียด</td>
+                                                <td> 
+                                             			   เปิด
+                                                       </td>
+                                            <td width="10%">
+                                            <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#deleterole"> 
+                                             
+                                        <i class="fa fa-folder-open-o"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                    </td>
+                                    </tr>
+                                      <tr height=50>
+                                                	
+                                                <td>หัวหน้าแผนก</td>
+											    <td>รายละเอียด</td>
+                                                <td> 
+                                             			   เปิด
+                                                       </td>
+                                            <td width="10%">
+                                            <a class="btn btn-circle btn-icon-only btn-default" data-toggle="modal" href="#deleterole"> 
+                                             
+                                        <i class="fa fa-folder-open-o"></i>
+                                    </a>
+                                    <a class="btn btn-circle btn-icon-only btn-default" href="javascript:;">
+                                        <i class="fa fa-trash"></i>
+                                    </a>
+                                    </td>
+                                    </tr>
+                                            
                                             </tbody>
                                             </table>
+    
                                             
                                             
-</div>
+</div></div>
  
 		<!-- /.modal -->
                                     <div class="modal fade" id="createrole" tabindex="-1" role="dialog" aria-hidden="true">

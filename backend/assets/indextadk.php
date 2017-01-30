@@ -130,6 +130,6 @@ class indextadk extends AssetBundle
     public $jsOptions = ['position' => \yii\web\View::POS_END];
     public $depends = [
        'yii\web\YiiAsset',
-       'yii\bootstrap\BootstrapAsset',
+       
     ];
 }

@@ -7,7 +7,7 @@ use backend\assets\indextadk;
 
 /* @var $this yii\web\View */
 /* @var $dataProvider yii\data\ActiveDataProvider */
-
+indextadk::register ( $this );
 $this->title = 'ประเภทโครงการ';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -18,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <p>
        <a class="btn btn-success" data-toggle="modal" href="#createcate"> <span>สร้างประเภท</span></a> 
     </p>
-    
+    <div class="portlet light bordered">    
                            
                            
    <table  width="100%" >
@@ -53,7 +53,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                             </table>
                                             
                                             
-</div>
+</div></div>
  
 		<!-- /.modal -->
                                     <div class="modal fade" id="createcate" tabindex="-1" role="dialog" aria-hidden="true">
